@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <Civ4EffectInfos xmlns="x-schema:../Schema/C2C_CIV4MiscSchema.xml">
 	<EffectInfos>
 		<!-- Interface:-->
@@ -2744,6 +2744,14 @@
 			<fScale>1.0</fScale>
 			<fUpdateRate>1.0</fUpdateRate>
 			<Path>Art/Units/Animals/Tarantula_Jungle/spidersilk.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_FOREST_FIRE</Type>
+			<Description>Forest fire</Description>
+			<fScale>7.8</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/improvement_campfire/fx_fire_campfire.nif</Path>
 			<bIsProjectile>0</bIsProjectile>
 		</EffectInfo>
 	</EffectInfos>

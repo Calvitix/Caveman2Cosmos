@@ -1,11 +1,4 @@
-<?xml version="1.0"?>
-<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Soren Johnson (Firaxis Games) -->
-<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Michael Curran (Firaxis Games) -->
-<!-- Sid Meier's Civilization 4 -->
-<!-- Copyright Firaxis Games 2005 -->
-<!-- ReModified by StrategyOnly -->
-<!-- -->
-<!-- 2D Sound Scripts -->
+<?xml version='1.0' encoding='UTF-8'?>
 <Script2DSounds xmlns="x-schema:AudioScriptSchema.xml">
 	<Script2DSound>
 		<ScriptID>AS2D_ERROR</ScriptID>
@@ -1045,29 +1038,6 @@
 	<Script2DSound>
 		<ScriptID>AS2D_SONG_CONQUESTS_MID_EAST</ScriptID>
 		<SoundID>SONG_CONQUESTS_MID_EAST</SoundID>
-		<SoundType>GAME_MUSIC</SoundType>
-		<iMinVolume>100</iMinVolume>
-		<iMaxVolume>100</iMaxVolume>
-		<iPitchChangeDown>0</iPitchChangeDown>
-		<iPitchChangeUp>0</iPitchChangeUp>
-		<iMinLeftPan>-1</iMinLeftPan>
-		<iMaxLeftPan>-1</iMaxLeftPan>
-		<iMinRightPan>-1</iMinRightPan>
-		<iMaxRightPan>-1</iMaxRightPan>
-		<bLooping>0</bLooping>
-		<iMinTimeDelay>0</iMinTimeDelay>
-		<iMaxTimeDelay>0</iMaxTimeDelay>
-		<bTaperForSoundtracks>0</bTaperForSoundtracks>
-		<iLengthOfSound>0</iLengthOfSound>
-		<fMinDryLevel>1.0</fMinDryLevel>
-		<fMaxDryLevel>1.0</fMaxDryLevel>
-		<fMinWetLevel>0.0</fMinWetLevel>
-		<fMaxWetLevel>0.0</fMaxWetLevel>
-		<iNotPlayPercent>0</iNotPlayPercent>
-	</Script2DSound>
-	<Script2DSound>
-		<ScriptID>AS2D_SONG_DIP_AS_EARLY_PEACE</ScriptID>
-		<SoundID>SONG_DIP_AS_EARLY_PEACE</SoundID>
 		<SoundType>GAME_MUSIC</SoundType>
 		<iMinVolume>100</iMinVolume>
 		<iMaxVolume>100</iMaxVolume>
@@ -20409,29 +20379,6 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_TUTORIAL_BUILD_QUARRY_0</ScriptID>
-		<SoundID>SND_TUTORIAL_BUILD_QUARRY_0</SoundID>
-		<SoundType>GAME_SPEECH</SoundType>
-		<iMinVolume>100</iMinVolume>
-		<iMaxVolume>100</iMaxVolume>
-		<iPitchChangeDown>0</iPitchChangeDown>
-		<iPitchChangeUp>0</iPitchChangeUp>
-		<iMinLeftPan>-1</iMinLeftPan>
-		<iMaxLeftPan>-1</iMaxLeftPan>
-		<iMinRightPan>-1</iMinRightPan>
-		<iMaxRightPan>-1</iMaxRightPan>
-		<bLooping>0</bLooping>
-		<iMinTimeDelay>0</iMinTimeDelay>
-		<iMaxTimeDelay>0</iMaxTimeDelay>
-		<bTaperForSoundtracks>0</bTaperForSoundtracks>
-		<iLengthOfSound>0</iLengthOfSound>
-		<fMinDryLevel>1.0</fMinDryLevel>
-		<fMaxDryLevel>1.0</fMaxDryLevel>
-		<fMinWetLevel>0.0</fMinWetLevel>
-		<fMaxWetLevel>0.0</fMaxWetLevel>
-		<iNotPlayPercent>0</iNotPlayPercent>
-	</Script2DSound>
-	<Script2DSound>
 		<ScriptID>AS2D_TUTORIAL_BUILD_ROAD_0</ScriptID>
 		<SoundID>SND_TUTORIAL_BUILD_ROAD_0</SoundID>
 		<SoundType>GAME_SPEECH</SoundType>
@@ -24135,29 +24082,6 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_BUILD_FIRE_DOCK</ScriptID>
-		<SoundID>SND_BUILD_FIRE_DOCK</SoundID>
-		<SoundType>GAME_INTERFACE</SoundType>
-		<iMinVolume>100</iMinVolume>
-		<iMaxVolume>100</iMaxVolume>
-		<iPitchChangeDown>0</iPitchChangeDown>
-		<iPitchChangeUp>0</iPitchChangeUp>
-		<iMinLeftPan>-1</iMinLeftPan>
-		<iMaxLeftPan>-1</iMaxLeftPan>
-		<iMinRightPan>-1</iMinRightPan>
-		<iMaxRightPan>-1</iMaxRightPan>
-		<bLooping>0</bLooping>
-		<iMinTimeDelay>0</iMinTimeDelay>
-		<iMaxTimeDelay>0</iMaxTimeDelay>
-		<bTaperForSoundtracks>0</bTaperForSoundtracks>
-		<iLengthOfSound>0</iLengthOfSound>
-		<fMinDryLevel>1.0</fMinDryLevel>
-		<fMaxDryLevel>1.0</fMaxDryLevel>
-		<fMinWetLevel>0.0</fMinWetLevel>
-		<fMaxWetLevel>0.0</fMaxWetLevel>
-		<iNotPlayPercent>0</iNotPlayPercent>
-	</Script2DSound>
-	<Script2DSound>
 		<ScriptID>AS2D_BUILD_FIRE_STATION</ScriptID>
 		<SoundID>SND_BUILD_FIRE_STATION</SoundID>
 		<SoundType>GAME_INTERFACE</SoundType>
@@ -24874,8 +24798,8 @@
 		<ScriptID>AS2D_BUILD_FESTIVAL</ScriptID>
 		<SoundID>SND_BUILD_FESTIVAL</SoundID>
 		<SoundType>GAME_SFX</SoundType>
-		<iMinVolume>75</iMinVolume>
-		<iMaxVolume>75</iMaxVolume>
+		<iMinVolume>44</iMinVolume>
+		<iMaxVolume>44</iMaxVolume>
 		<iPitchChangeDown>0</iPitchChangeDown>
 		<iPitchChangeUp>0</iPitchChangeUp>
 		<iMinLeftPan>-1</iMinLeftPan>
@@ -30621,29 +30545,6 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_TECH_METALLURGY</ScriptID>
-		<SoundID>SND_TECH_METALLURGY</SoundID>
-		<SoundType>GAME_SPEECH</SoundType>
-		<iMinVolume>100</iMinVolume>
-		<iMaxVolume>100</iMaxVolume>
-		<iPitchChangeDown>0</iPitchChangeDown>
-		<iPitchChangeUp>0</iPitchChangeUp>
-		<iMinLeftPan>-1</iMinLeftPan>
-		<iMaxLeftPan>-1</iMaxLeftPan>
-		<iMinRightPan>-1</iMinRightPan>
-		<iMaxRightPan>-1</iMaxRightPan>
-		<bLooping>0</bLooping>
-		<iMinTimeDelay>0</iMinTimeDelay>
-		<iMaxTimeDelay>0</iMaxTimeDelay>
-		<bTaperForSoundtracks>0</bTaperForSoundtracks>
-		<iLengthOfSound>0</iLengthOfSound>
-		<fMinDryLevel>1.0</fMinDryLevel>
-		<fMaxDryLevel>1.0</fMaxDryLevel>
-		<fMinWetLevel>0.0</fMinWetLevel>
-		<fMaxWetLevel>0.0</fMaxWetLevel>
-		<iNotPlayPercent>0</iNotPlayPercent>
-	</Script2DSound>
-	<Script2DSound>
 		<ScriptID>AS2D_TECH_STARGAZING</ScriptID>
 		<SoundID>SND_TECH_STARGAZING</SoundID>
 		<SoundType>GAME_SPEECH</SoundType>
@@ -32668,29 +32569,6 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_TECH_LINGUISTICS</ScriptID>
-		<SoundID>SND_TECH_LINGUISTICS</SoundID>
-		<SoundType>GAME_SPEECH</SoundType>
-		<iMinVolume>100</iMinVolume>
-		<iMaxVolume>100</iMaxVolume>
-		<iPitchChangeDown>0</iPitchChangeDown>
-		<iPitchChangeUp>0</iPitchChangeUp>
-		<iMinLeftPan>-1</iMinLeftPan>
-		<iMaxLeftPan>-1</iMaxLeftPan>
-		<iMinRightPan>-1</iMinRightPan>
-		<iMaxRightPan>-1</iMaxRightPan>
-		<bLooping>0</bLooping>
-		<iMinTimeDelay>0</iMinTimeDelay>
-		<iMaxTimeDelay>0</iMaxTimeDelay>
-		<bTaperForSoundtracks>0</bTaperForSoundtracks>
-		<iLengthOfSound>0</iLengthOfSound>
-		<fMinDryLevel>1.0</fMinDryLevel>
-		<fMaxDryLevel>1.0</fMaxDryLevel>
-		<fMinWetLevel>0.0</fMinWetLevel>
-		<fMaxWetLevel>0.0</fMaxWetLevel>
-		<iNotPlayPercent>0</iNotPlayPercent>
-	</Script2DSound>
-	<Script2DSound>
 		<ScriptID>AS2D_TECH_SACRIFICE_CULT</ScriptID>
 		<SoundID>SND_TECH_SACRIFICE_CULT</SoundID>
 		<SoundType>GAME_SPEECH</SoundType>
@@ -33383,29 +33261,6 @@
 	<Script2DSound>
 		<ScriptID>AS2D_TECH_EARLY_COMPUTING</ScriptID>
 		<SoundID>SND_TECH_EARLY_COMPUTING</SoundID>
-		<SoundType>GAME_SPEECH</SoundType>
-		<iMinVolume>100</iMinVolume>
-		<iMaxVolume>100</iMaxVolume>
-		<iPitchChangeDown>0</iPitchChangeDown>
-		<iPitchChangeUp>0</iPitchChangeUp>
-		<iMinLeftPan>-1</iMinLeftPan>
-		<iMaxLeftPan>-1</iMaxLeftPan>
-		<iMinRightPan>-1</iMinRightPan>
-		<iMaxRightPan>-1</iMaxRightPan>
-		<bLooping>0</bLooping>
-		<iMinTimeDelay>0</iMinTimeDelay>
-		<iMaxTimeDelay>0</iMaxTimeDelay>
-		<bTaperForSoundtracks>0</bTaperForSoundtracks>
-		<iLengthOfSound>0</iLengthOfSound>
-		<fMinDryLevel>1.0</fMinDryLevel>
-		<fMaxDryLevel>1.0</fMaxDryLevel>
-		<fMinWetLevel>0.0</fMinWetLevel>
-		<fMaxWetLevel>0.0</fMaxWetLevel>
-		<iNotPlayPercent>0</iNotPlayPercent>
-	</Script2DSound>
-	<Script2DSound>
-		<ScriptID>AS2D_TECH_PERSONAL_COMPUTERS</ScriptID>
-		<SoundID>SND_TECH_PERSONAL_COMPUTERS</SoundID>
 		<SoundType>GAME_SPEECH</SoundType>
 		<iMinVolume>100</iMinVolume>
 		<iMaxVolume>100</iMaxVolume>
@@ -36164,29 +36019,6 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_TECH_AVIATION</ScriptID>
-		<SoundID>SND_TECH_AVIATION</SoundID>
-		<SoundType>GAME_SPEECH</SoundType>
-		<iMinVolume>100</iMinVolume>
-		<iMaxVolume>100</iMaxVolume>
-		<iPitchChangeDown>0</iPitchChangeDown>
-		<iPitchChangeUp>0</iPitchChangeUp>
-		<iMinLeftPan>-1</iMinLeftPan>
-		<iMaxLeftPan>-1</iMaxLeftPan>
-		<iMinRightPan>-1</iMinRightPan>
-		<iMaxRightPan>-1</iMaxRightPan>
-		<bLooping>0</bLooping>
-		<iMinTimeDelay>0</iMinTimeDelay>
-		<iMaxTimeDelay>0</iMaxTimeDelay>
-		<bTaperForSoundtracks>0</bTaperForSoundtracks>
-		<iLengthOfSound>0</iLengthOfSound>
-		<fMinDryLevel>1.0</fMinDryLevel>
-		<fMaxDryLevel>1.0</fMaxDryLevel>
-		<fMinWetLevel>0.0</fMinWetLevel>
-		<fMaxWetLevel>0.0</fMaxWetLevel>
-		<iNotPlayPercent>0</iNotPlayPercent>
-	</Script2DSound>
-	<Script2DSound>
 		<ScriptID>AS2D_TECH_BACTERIUM_ENGINEERING</ScriptID>
 		<SoundID>SND_TECH_BACTERIUM_ENGINEERING</SoundID>
 		<SoundType>GAME_SPEECH</SoundType>
@@ -37360,29 +37192,6 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_TECH_CONSUMERISM</ScriptID>
-		<SoundID>SND_TECH_CONSUMERISM</SoundID>
-		<SoundType>GAME_SPEECH</SoundType>
-		<iMinVolume>100</iMinVolume>
-		<iMaxVolume>100</iMaxVolume>
-		<iPitchChangeDown>0</iPitchChangeDown>
-		<iPitchChangeUp>0</iPitchChangeUp>
-		<iMinLeftPan>-1</iMinLeftPan>
-		<iMaxLeftPan>-1</iMaxLeftPan>
-		<iMinRightPan>-1</iMinRightPan>
-		<iMaxRightPan>-1</iMaxRightPan>
-		<bLooping>0</bLooping>
-		<iMinTimeDelay>0</iMinTimeDelay>
-		<iMaxTimeDelay>0</iMaxTimeDelay>
-		<bTaperForSoundtracks>0</bTaperForSoundtracks>
-		<iLengthOfSound>0</iLengthOfSound>
-		<fMinDryLevel>1.0</fMinDryLevel>
-		<fMaxDryLevel>1.0</fMaxDryLevel>
-		<fMinWetLevel>0.0</fMinWetLevel>
-		<fMaxWetLevel>0.0</fMaxWetLevel>
-		<iNotPlayPercent>0</iNotPlayPercent>
-	</Script2DSound>
-	<Script2DSound>
 		<ScriptID>AS2D_TECH_CONTROLLED_PLASMA</ScriptID>
 		<SoundID>SND_TECH_CONTROLLED_PLASMA</SoundID>
 		<SoundType>GAME_SPEECH</SoundType>
@@ -37797,29 +37606,6 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_TECH_DNA_COMPUTING</ScriptID>
-		<SoundID>SND_TECH_DNA_COMPUTING</SoundID>
-		<SoundType>GAME_SPEECH</SoundType>
-		<iMinVolume>100</iMinVolume>
-		<iMaxVolume>100</iMaxVolume>
-		<iPitchChangeDown>0</iPitchChangeDown>
-		<iPitchChangeUp>0</iPitchChangeUp>
-		<iMinLeftPan>-1</iMinLeftPan>
-		<iMaxLeftPan>-1</iMaxLeftPan>
-		<iMinRightPan>-1</iMinRightPan>
-		<iMaxRightPan>-1</iMaxRightPan>
-		<bLooping>0</bLooping>
-		<iMinTimeDelay>0</iMinTimeDelay>
-		<iMaxTimeDelay>0</iMaxTimeDelay>
-		<bTaperForSoundtracks>0</bTaperForSoundtracks>
-		<iLengthOfSound>0</iLengthOfSound>
-		<fMinDryLevel>1.0</fMinDryLevel>
-		<fMaxDryLevel>1.0</fMaxDryLevel>
-		<fMinWetLevel>0.0</fMinWetLevel>
-		<fMaxWetLevel>0.0</fMaxWetLevel>
-		<iNotPlayPercent>0</iNotPlayPercent>
-	</Script2DSound>
-	<Script2DSound>
 		<ScriptID>AS2D_TECH_DRUG_TRADE2</ScriptID>
 		<SoundID>SND_TECH_DRUG_TRADE2</SoundID>
 		<SoundType>GAME_SPEECH</SoundType>
@@ -38213,29 +37999,6 @@
 	<Script2DSound>
 		<ScriptID>AS2D_TECH_EXTREME_SPORTS</ScriptID>
 		<SoundID>SND_TECH_EXTREME_SPORTS</SoundID>
-		<SoundType>GAME_SPEECH</SoundType>
-		<iMinVolume>100</iMinVolume>
-		<iMaxVolume>100</iMaxVolume>
-		<iPitchChangeDown>0</iPitchChangeDown>
-		<iPitchChangeUp>0</iPitchChangeUp>
-		<iMinLeftPan>-1</iMinLeftPan>
-		<iMaxLeftPan>-1</iMaxLeftPan>
-		<iMinRightPan>-1</iMinRightPan>
-		<iMaxRightPan>-1</iMaxRightPan>
-		<bLooping>0</bLooping>
-		<iMinTimeDelay>0</iMinTimeDelay>
-		<iMaxTimeDelay>0</iMaxTimeDelay>
-		<bTaperForSoundtracks>0</bTaperForSoundtracks>
-		<iLengthOfSound>0</iLengthOfSound>
-		<fMinDryLevel>1.0</fMinDryLevel>
-		<fMaxDryLevel>1.0</fMaxDryLevel>
-		<fMinWetLevel>0.0</fMinWetLevel>
-		<fMaxWetLevel>0.0</fMaxWetLevel>
-		<iNotPlayPercent>0</iNotPlayPercent>
-	</Script2DSound>
-	<Script2DSound>
-		<ScriptID>AS2D_TECH_FELINE_DOMESTICATION</ScriptID>
-		<SoundID>SND_TECH_FELINE_DOMESTICATION</SoundID>
 		<SoundType>GAME_SPEECH</SoundType>
 		<iMinVolume>100</iMinVolume>
 		<iMaxVolume>100</iMaxVolume>
@@ -39133,29 +38896,6 @@
 	<Script2DSound>
 		<ScriptID>AS2D_TECH_HYPOTHETICAL_BIOCHEMISTRY</ScriptID>
 		<SoundID>SND_TECH_HYPOTHETICAL_BIOCHEMISTRY</SoundID>
-		<SoundType>GAME_SPEECH</SoundType>
-		<iMinVolume>100</iMinVolume>
-		<iMaxVolume>100</iMaxVolume>
-		<iPitchChangeDown>0</iPitchChangeDown>
-		<iPitchChangeUp>0</iPitchChangeUp>
-		<iMinLeftPan>-1</iMinLeftPan>
-		<iMaxLeftPan>-1</iMaxLeftPan>
-		<iMinRightPan>-1</iMinRightPan>
-		<iMaxRightPan>-1</iMaxRightPan>
-		<bLooping>0</bLooping>
-		<iMinTimeDelay>0</iMinTimeDelay>
-		<iMaxTimeDelay>0</iMaxTimeDelay>
-		<bTaperForSoundtracks>0</bTaperForSoundtracks>
-		<iLengthOfSound>0</iLengthOfSound>
-		<fMinDryLevel>1.0</fMinDryLevel>
-		<fMaxDryLevel>1.0</fMaxDryLevel>
-		<fMinWetLevel>0.0</fMinWetLevel>
-		<fMaxWetLevel>0.0</fMaxWetLevel>
-		<iNotPlayPercent>0</iNotPlayPercent>
-	</Script2DSound>
-	<Script2DSound>
-		<ScriptID>AS2D_TECH_IMPERIALISM</ScriptID>
-		<SoundID>SND_TECH_IMPERIALISM</SoundID>
 		<SoundType>GAME_SPEECH</SoundType>
 		<iMinVolume>100</iMinVolume>
 		<iMaxVolume>100</iMaxVolume>
@@ -42903,29 +42643,6 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_TECH_SUPERSTRONG_ALLOYS</ScriptID>
-		<SoundID>SND_TECH_SUPERSTRONG_ALLOYS</SoundID>
-		<SoundType>GAME_SPEECH</SoundType>
-		<iMinVolume>100</iMinVolume>
-		<iMaxVolume>100</iMaxVolume>
-		<iPitchChangeDown>0</iPitchChangeDown>
-		<iPitchChangeUp>0</iPitchChangeUp>
-		<iMinLeftPan>-1</iMinLeftPan>
-		<iMaxLeftPan>-1</iMaxLeftPan>
-		<iMinRightPan>-1</iMinRightPan>
-		<iMaxRightPan>-1</iMaxRightPan>
-		<bLooping>0</bLooping>
-		<iMinTimeDelay>0</iMinTimeDelay>
-		<iMaxTimeDelay>0</iMaxTimeDelay>
-		<bTaperForSoundtracks>0</bTaperForSoundtracks>
-		<iLengthOfSound>0</iLengthOfSound>
-		<fMinDryLevel>1.0</fMinDryLevel>
-		<fMaxDryLevel>1.0</fMaxDryLevel>
-		<fMinWetLevel>0.0</fMinWetLevel>
-		<fMaxWetLevel>0.0</fMaxWetLevel>
-		<iNotPlayPercent>0</iNotPlayPercent>
-	</Script2DSound>
-	<Script2DSound>
 		<ScriptID>AS2D_TECH_SYNERGETICS</ScriptID>
 		<SoundID>SND_TECH_SYNERGETICS</SoundID>
 		<SoundType>GAME_SPEECH</SoundType>
@@ -43089,29 +42806,6 @@
 	<Script2DSound>
 		<ScriptID>AS2D_TECH_TELEPORTATION</ScriptID>
 		<SoundID>SND_TECH_TELEPORTATION</SoundID>
-		<SoundType>GAME_SPEECH</SoundType>
-		<iMinVolume>100</iMinVolume>
-		<iMaxVolume>100</iMaxVolume>
-		<iPitchChangeDown>0</iPitchChangeDown>
-		<iPitchChangeUp>0</iPitchChangeUp>
-		<iMinLeftPan>-1</iMinLeftPan>
-		<iMaxLeftPan>-1</iMaxLeftPan>
-		<iMinRightPan>-1</iMinRightPan>
-		<iMaxRightPan>-1</iMaxRightPan>
-		<bLooping>0</bLooping>
-		<iMinTimeDelay>0</iMinTimeDelay>
-		<iMaxTimeDelay>0</iMaxTimeDelay>
-		<bTaperForSoundtracks>0</bTaperForSoundtracks>
-		<iLengthOfSound>0</iLengthOfSound>
-		<fMinDryLevel>1.0</fMinDryLevel>
-		<fMaxDryLevel>1.0</fMaxDryLevel>
-		<fMinWetLevel>0.0</fMinWetLevel>
-		<fMaxWetLevel>0.0</fMaxWetLevel>
-		<iNotPlayPercent>0</iNotPlayPercent>
-	</Script2DSound>
-	<Script2DSound>
-		<ScriptID>AS2D_TECH_TELEVISION</ScriptID>
-		<SoundID>SND_TECH_TELEVISION</SoundID>
 		<SoundType>GAME_SPEECH</SoundType>
 		<iMinVolume>100</iMinVolume>
 		<iMaxVolume>100</iMaxVolume>
@@ -44605,29 +44299,6 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_TECH_ANDROIDS</ScriptID>
-		<SoundID>SND_TECH_ANDROIDS</SoundID>
-		<SoundType>GAME_SPEECH</SoundType>
-		<iMinVolume>100</iMinVolume>
-		<iMaxVolume>100</iMaxVolume>
-		<iPitchChangeDown>0</iPitchChangeDown>
-		<iPitchChangeUp>0</iPitchChangeUp>
-		<iMinLeftPan>-1</iMinLeftPan>
-		<iMaxLeftPan>-1</iMaxLeftPan>
-		<iMinRightPan>-1</iMinRightPan>
-		<iMaxRightPan>-1</iMaxRightPan>
-		<bLooping>0</bLooping>
-		<iMinTimeDelay>0</iMinTimeDelay>
-		<iMaxTimeDelay>0</iMaxTimeDelay>
-		<bTaperForSoundtracks>0</bTaperForSoundtracks>
-		<iLengthOfSound>0</iLengthOfSound>
-		<fMinDryLevel>1.0</fMinDryLevel>
-		<fMaxDryLevel>1.0</fMaxDryLevel>
-		<fMinWetLevel>0.0</fMinWetLevel>
-		<fMaxWetLevel>0.0</fMaxWetLevel>
-		<iNotPlayPercent>0</iNotPlayPercent>
-	</Script2DSound>
-	<Script2DSound>
 		<ScriptID>AS2D_TECH_RADIO_ASTRONOMY</ScriptID>
 		<SoundID>SND_TECH_RADIO_ASTRONOMY</SoundID>
 		<SoundType>GAME_SPEECH</SoundType>
@@ -44653,29 +44324,6 @@
 	<Script2DSound>
 		<ScriptID>AS2D_TECH_MINING2</ScriptID>
 		<SoundID>SND_TECH_MINING2</SoundID>
-		<SoundType>GAME_SPEECH</SoundType>
-		<iMinVolume>100</iMinVolume>
-		<iMaxVolume>100</iMaxVolume>
-		<iPitchChangeDown>0</iPitchChangeDown>
-		<iPitchChangeUp>0</iPitchChangeUp>
-		<iMinLeftPan>-1</iMinLeftPan>
-		<iMaxLeftPan>-1</iMaxLeftPan>
-		<iMinRightPan>-1</iMinRightPan>
-		<iMaxRightPan>-1</iMaxRightPan>
-		<bLooping>0</bLooping>
-		<iMinTimeDelay>0</iMinTimeDelay>
-		<iMaxTimeDelay>0</iMaxTimeDelay>
-		<bTaperForSoundtracks>0</bTaperForSoundtracks>
-		<iLengthOfSound>0</iLengthOfSound>
-		<fMinDryLevel>1.0</fMinDryLevel>
-		<fMaxDryLevel>1.0</fMaxDryLevel>
-		<fMinWetLevel>0.0</fMinWetLevel>
-		<fMaxWetLevel>0.0</fMaxWetLevel>
-		<iNotPlayPercent>0</iNotPlayPercent>
-	</Script2DSound>
-	<Script2DSound>
-		<ScriptID>AS2D_TECH_ARCHEOLOGY</ScriptID>
-		<SoundID>SND_TECH_ARCHEOLOGY</SoundID>
 		<SoundType>GAME_SPEECH</SoundType>
 		<iMinVolume>100</iMinVolume>
 		<iMaxVolume>100</iMaxVolume>

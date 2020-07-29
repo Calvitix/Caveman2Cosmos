@@ -36,66 +36,6 @@
 			</CommerceChanges>
 		</BuildingInfo>
 		<BuildingInfo>
-			<Type>BUILDING_FAST_BREEDER_REACTOR</Type>
-			<Description>TXT_KEY_BUILDING_FAST_BREEDER_REACTOR</Description>
-			<Civilopedia>TXT_KEY_BUILDING_FAST_BREEDER_REACTOR_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_FAST_BREEDER_REACTOR_STRATEGY</Strategy>
-			<Advisor>ADVISOR_SCIENCE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_FAST_BREEDER_REACTOR</ArtDefineTag>
-			<!-- RevolutionDCM End  -->
-			<ObsoleteTech>TECH_FUSION</ObsoleteTech>
-			<PrereqTech>TECH_ATOMPUNK</PrereqTech>
-			<MapCategoryTypes>
-				<MapCategoryType>MAPCATEGORY_EARTH</MapCategoryType>
-			</MapCategoryTypes>
-			<Bonus>BONUS_ATOMPUNK</Bonus>
-			<PrereqBonuses>
-				<Bonus>BONUS_URANIUM</Bonus>
-			</PrereqBonuses>
-			<ConstructCondition>
-				<And>
-					<Has>
-						<GOMType>GOM_BONUS</GOMType>
-						<ID>BONUS_HEAVY_WATER</ID>
-					</Has>
-				</And>
-			</ConstructCondition>
-			<bRiver>1</bRiver>
-			<bPower>1</bPower>
-			<iCost>1345</iCost>
-			<iHurryCostModifier>100</iHurryCostModifier>
-			<iHealth>-1</iHealth>
-			<!-- RevolutionDCM End  -->
-			<fVisibilityPriority>1.0</fVisibilityPriority>
-			<CommerceChanges>
-				<iCommerce>-50</iCommerce>
-			</CommerceChanges>
-			<YieldModifiers>
-				<iYield>0</iYield>
-				<iYield>20</iYield>
-			</YieldModifiers>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
-			<PrereqInCityBuildings>
-				<BuildingType>BUILDING_FACTORY</BuildingType>
-			</PrereqInCityBuildings>
-			<ReplaceBuildings>
-				<ReplaceBuilding>
-					<BuildingType>BUILDING_CLEAN_NUCLEAR_REACTOR</BuildingType>
-					<bReplace>1</bReplace>
-				</ReplaceBuilding>
-				<ReplaceBuilding>
-					<BuildingType>BUILDING_HI_TECH_NUCLEAR_REACTOR</BuildingType>
-					<bReplace>1</bReplace>
-				</ReplaceBuilding>
-			</ReplaceBuildings>
-			<iPrereqPopulation>6</iPrereqPopulation>
-		</BuildingInfo>
-		<BuildingInfo>
 			<Type>BUILDING_VIDEOPHONE_NETWORK</Type>
 			<Description>TXT_KEY_BUILDING_VIDEOPHONE_NETWORK</Description>
 			<Civilopedia>TXT_KEY_BUILDING_VIDEOPHONE_NETWORK_PEDIA</Civilopedia>
@@ -498,7 +438,6 @@
 				<MapCategoryType>MAPCATEGORY_EARTH</MapCategoryType>
 			</MapCategoryTypes>
 			<Bonus>BONUS_ATOMPUNK</Bonus>
-			<iCost>-1</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iHealth>-3</iHealth>
@@ -645,6 +584,7 @@
 		<BuildingInfo>
 			<Type>BUILDING_NUCLEAR_POWERCOMPLEX</Type>
 			<iMaxPlayerInstances>1</iMaxPlayerInstances>
+			<bNeverCapture>1</bNeverCapture>
 			<Description>TXT_KEY_BUILDING_NUCLEAR_POWERCOMPLEX</Description>
 			<Civilopedia>TXT_KEY_BUILDING_NUCLEAR_POWERCOMPLEX_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_NUCLEAR_POWERCOMPLEX_STRATEGY</Strategy>
@@ -847,6 +787,7 @@
 		<BuildingInfo>
 			<Type>BUILDING_VENTURE_INDUSTRIES</Type>
 			<iMaxPlayerInstances>1</iMaxPlayerInstances>
+			<bNeverCapture>1</bNeverCapture>
 			<Description>TXT_KEY_BUILDING_VENTURE_INDUSTRIES</Description>
 			<Civilopedia>TXT_KEY_BUILDING_VENTURE_INDUSTRIES_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_VENTURE_INDUSTRIES_STRATEGY</Strategy>
@@ -928,7 +869,6 @@
 			</MapCategoryTypes>
 			<Bonus>BONUS_ATOMPUNK</Bonus>
 			<bPower>1</bPower>
-			<iCost>-1</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iConquestProb>0</iConquestProb>

@@ -9,6 +9,8 @@
 //  Copyright (c) 2003 Firaxis Games, Inc. All rights reserved.
 //------------------------------------------------------------------------------------------------
 #include "CvGameCoreDLL.h"
+#include "CvPlayerAI.h"
+#include "CvXMLLoadUtility.h"
 
 //======================================================================================================
 //					CvUnitInfo
@@ -87,7 +89,7 @@ m_iSMCargoSpace(0),
 m_iSMCargoVolume(0),
 m_iConscriptionValue(0),
 m_iCultureGarrisonValue(0),
-m_iExtraCost(0),
+m_iBaseUpkeep(0),
 m_iAssetValue(0),
 m_iPowerValue(0),
 m_iSpecialUnitType(NO_SPECIALUNIT),
@@ -144,7 +146,6 @@ m_bFlatMovementCost(false),
 m_bIgnoreTerrainCost(false),
 m_bNukeImmune(false),
 m_bPrereqBonuses(false),
-m_bPrereqReligion(false),
 m_bMechanized(false),
 m_bRenderBelowWater(false),
 m_bRenderAlways(false),
@@ -266,7 +267,6 @@ m_iBreakdownDamage(0),
 m_iTaunt(0),
 m_iMaxHP(100),
 m_iDamageModifier(0),
-m_iCostModifier(0),
 m_iTotalCombatStrengthModifierBase(0),
 m_iTotalCombatStrengthChangeBase(0),
 m_iBaseCargoVolume(0),
@@ -433,6 +433,41 @@ bool CvUnitInfo::isUnlimitedException() const
 	return m_bUnlimitedException;
 }
 
+
+// When a player is specified as argument, only civ units not specific to said player returns false, else true.
+// Thus regular units will also return true as they are not specific to another civ than this player.
+// When NO_PLAYER - Any units requiring a civ specific building are considered civ units, all others are not.
+bool CvUnitInfo::isCivilizationUnit(const PlayerTypes ePlayer) const
+{
+	// Not the most elegant solution for exluding or including neanderthal units for startin unit selection,
+	// nor the best way to stop barbarians from spawning neanderthal units. But good enough for now.
+	const bool bCivUnit = ePlayer != NO_PLAYER;
+
+	for (int iI = 0; iI < getNumPrereqAndBuildings(); ++iI)
+	{
+		const int iBuilding = getPrereqAndBuilding(iI);
+
+		for (int iCiv = 0; iCiv < GC.getNumCivilizationInfos(); iCiv++)
+		{
+			// Civ specific building prereq?
+			if(GC.getCivilizationInfo((CivilizationTypes)iCiv).isPlayable()
+			&& GC.getCivilizationInfo((CivilizationTypes)iCiv).isCivilizationBuilding(iBuilding))
+			{
+				if (!bCivUnit) // NO_PLAYER
+				{
+					return true; // A civ specific unit.
+				}
+				// Most likely a native or active culture prereq
+				if (!GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).isCivilizationBuilding(iBuilding))
+				{
+					return false; // Not specific to ePlayer civ.
+				}
+				break;
+			}
+		}
+	}
+	return bCivUnit; // Unit is valid for ePlayer civilization.
+}
 
 int CvUnitInfo::getInstanceCostModifier() const
 {
@@ -765,9 +800,9 @@ int CvUnitInfo::getCultureGarrisonValue() const
 	return m_iCultureGarrisonValue;
 }
 
-int CvUnitInfo::getExtraCost() const
+int CvUnitInfo::getBaseUpkeep() const
 {
-	return m_iExtraCost;
+	return m_iBaseUpkeep;
 }
 
 int CvUnitInfo::getAssetValue(bool bForLoad) const
@@ -1085,11 +1120,6 @@ bool CvUnitInfo::isPrereqBonuses() const
 	return m_bPrereqBonuses;
 }
 
-bool CvUnitInfo::isPrereqReligion() const
-{
-	return m_bPrereqReligion;
-}
-
 bool CvUnitInfo::isMechUnit() const
 {
 	return m_bMechanized;
@@ -1205,7 +1235,7 @@ void CvUnitInfo::setCommandType(int iNewType)
 	m_iCommandType = iNewType;
 }
 
-BoolExpr* CvUnitInfo::getTrainCondition()
+BoolExpr* CvUnitInfo::getTrainCondition() const
 {
 	return m_pExprTrainCondition;
 }
@@ -1245,13 +1275,13 @@ bool CvUnitInfo::isPrereqOrCivics(int i) const
 	return m_pbPrereqOrCivics ? m_pbPrereqOrCivics[i] : false;
 }
 
-int CvUnitInfo::getPrereqAndBuilding(int i) const
-{
-	return m_aiPrereqAndBuildings[i];
-}
 int CvUnitInfo::getNumPrereqAndBuildings() const
 {
 	return (int)m_aiPrereqAndBuildings.size();
+}
+int CvUnitInfo::getPrereqAndBuilding(int i) const
+{
+	return m_aiPrereqAndBuildings[i];
 }
 bool CvUnitInfo::isPrereqAndBuilding(int i) const
 {
@@ -1589,7 +1619,7 @@ int CvUnitInfo::getLeaderExperience() const
 	return m_iLeaderExperience;
 }
 
-CvOutcomeList* CvUnitInfo::getKillOutcomeList()
+const CvOutcomeList* CvUnitInfo::getKillOutcomeList() const
 {
 	return &m_KillOutcomeList;
 }
@@ -1599,17 +1629,17 @@ int CvUnitInfo::getNumActionOutcomes() const
 	return m_aOutcomeMissions.size();
 }
 
-MissionTypes CvUnitInfo::getActionOutcomeMission(const int index) const
+MissionTypes CvUnitInfo::getActionOutcomeMission(int index) const
 {
 	return m_aOutcomeMissions[index]->getMission();
 }
 
-CvOutcomeList* CvUnitInfo::getActionOutcomeList(const int index) const
+const CvOutcomeList* CvUnitInfo::getActionOutcomeList(int index) const
 {
 	return m_aOutcomeMissions[index]->getOutcomeList();
 }
 
-CvOutcomeList* CvUnitInfo::getActionOutcomeListByMission(const MissionTypes eMission) const
+const CvOutcomeList* CvUnitInfo::getActionOutcomeListByMission(MissionTypes eMission) const
 {
 	for (int i = 0; i < (int) m_aOutcomeMissions.size(); i++)
 	{
@@ -1621,12 +1651,12 @@ CvOutcomeList* CvUnitInfo::getActionOutcomeListByMission(const MissionTypes eMis
 	return NULL;
 }
 
-CvOutcomeMission* CvUnitInfo::getOutcomeMission(const int index) const
+const CvOutcomeMission* CvUnitInfo::getOutcomeMission(int index) const
 {
 	return m_aOutcomeMissions[index];
 }
 
-CvOutcomeMission* CvUnitInfo::getOutcomeMissionByMission(const MissionTypes eMission) const
+CvOutcomeMission* CvUnitInfo::getOutcomeMissionByMission(MissionTypes eMission) const
 {
 	for (int i = 0; i < (int) m_aOutcomeMissions.size(); i++)
 	{
@@ -1898,11 +1928,6 @@ void CvUnitInfo::setPowerValue(int iNewValue)
 	m_iPowerValue = iNewValue;
 }
 
-CvPropertyManipulators* CvUnitInfo::getPropertyManipulators()
-{
-	return &m_PropertyManipulators;
-}
-
 int CvUnitInfo::getPrereqVicinityBonus() const
 {
 	return m_iPrereqVicinityBonus;
@@ -1975,8 +2000,8 @@ CvWString CvUnitInfo::getCivilizationName(int i) const
 }
 
 int CvUnitInfo::getCivilizationNamesVectorSize() const					{return m_aszCivilizationNamesforPass3.size();}
-CvWString CvUnitInfo::getCivilizationNamesNamesVectorElement(const int i) const	{return m_aszCivilizationNamesforPass3[i];}
-CvWString CvUnitInfo::getCivilizationNamesValuesVectorElement(const int i) const		{return m_aszCivilizationNamesValueforPass3[i];}
+CvWString CvUnitInfo::getCivilizationNamesNamesVectorElement(int i) const	{return m_aszCivilizationNamesforPass3[i];}
+CvWString CvUnitInfo::getCivilizationNamesValuesVectorElement(int i) const		{return m_aszCivilizationNamesValueforPass3[i];}
 
 
 //TB Combat Mods Start  TB SubCombat Mod begin
@@ -2447,11 +2472,6 @@ int CvUnitInfo::getDamageModifier() const
 	return m_iDamageModifier;
 }
 
-int CvUnitInfo::getCostModifier() const
-{
-	return m_iCostModifier;
-}
-
 int CvUnitInfo::getRBombardDamage() const
 {
 	return m_iRBombardDamage;
@@ -2841,7 +2861,7 @@ int CvUnitInfo::getNumMapCategoryTypes() const
 	return (int)m_aiMapCategoryTypes.size();
 }
 
-bool CvUnitInfo::isMapCategoryType(int i)
+bool CvUnitInfo::isMapCategoryType(int i) const
 {
 	FAssert (i > -1 && i < GC.getNumMapCategoryInfos()); // do not include this line if for delayed resolution
 	if (find(m_aiMapCategoryTypes.begin(), m_aiMapCategoryTypes.end(), i) == m_aiMapCategoryTypes.end())
@@ -3867,7 +3887,7 @@ void CvUnitInfo::getCheckSum(unsigned int &iSum)
 	CheckSum(iSum, m_iSMCargoVolume);
 	CheckSum(iSum, m_iConscriptionValue);
 	CheckSum(iSum, m_iCultureGarrisonValue);
-	CheckSum(iSum, m_iExtraCost);
+	CheckSum(iSum, m_iBaseUpkeep);
 	CheckSum(iSum, m_iAssetValue);
 	CheckSum(iSum, m_iPowerValue);
 	CheckSum(iSum, m_iSpecialUnitType);
@@ -3930,7 +3950,6 @@ void CvUnitInfo::getCheckSum(unsigned int &iSum)
 	CheckSum(iSum, m_bIgnoreTerrainCost);
 	CheckSum(iSum, m_bNukeImmune);
 	CheckSum(iSum, m_bPrereqBonuses);
-	CheckSum(iSum, m_bPrereqReligion);
 	CheckSum(iSum, m_bMechanized);
 	CheckSum(iSum, m_bRenderBelowWater);
 	CheckSum(iSum, m_bRenderAlways);
@@ -4012,7 +4031,7 @@ void CvUnitInfo::getCheckSum(unsigned int &iSum)
 	CheckSumI(iSum, GC.getNUM_UNIT_PREREQ_OR_BONUSES(), m_piPrereqOrVicinityBonuses);
 	CheckSumI(iSum, GC.getNumRouteInfos(), m_pbPassableRouteNeeded);
 
-	getKillOutcomeList()->getCheckSum(iSum);
+	m_KillOutcomeList.getCheckSum(iSum);
 
 	for (int i=0; i<(int)m_aOutcomeMissions.size(); i++)
 	{
@@ -4079,7 +4098,6 @@ void CvUnitInfo::getCheckSum(unsigned int &iSum)
 	CheckSum(iSum, m_iTaunt);
 	CheckSum(iSum, m_iMaxHP);
 	CheckSum(iSum, m_iDamageModifier);
-	CheckSum(iSum, m_iCostModifier);
 	CheckSum(iSum, m_iTotalCombatStrengthModifierBase);
 	CheckSum(iSum, m_iTotalCombatStrengthChangeBase);
 	CheckSum(iSum, m_iBaseCargoVolume);
@@ -4316,9 +4334,6 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	// EXTRA HOVER TEXT
 	pXML->GetOptionalChildXmlValByName(m_szExtraHoverTextKey, L"ExtraHoverText");
 
-	pXML->GetOptionalChildXmlValByName(szTextVal, L"Capture");
-	m_aszExtraXMLforPass3.push_back(szTextVal);
-
 	pXML->GetOptionalChildXmlValByName(szTextVal, L"Combat");
 	m_iUnitCombatType = pXML->GetInfoClass(szTextVal);
 
@@ -4374,7 +4389,6 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetOptionalChildXmlValByName(&m_bIgnoreTerrainCost, L"bIgnoreTerrainCost");
 	pXML->GetOptionalChildXmlValByName(&m_bNukeImmune, L"bNukeImmune");
 	pXML->GetOptionalChildXmlValByName(&m_bPrereqBonuses, L"bPrereqBonuses");
-	pXML->GetOptionalChildXmlValByName(&m_bPrereqReligion, L"bPrereqReligion");
 	pXML->GetOptionalChildXmlValByName(&m_bMechanized, L"bMechanized");
 	pXML->GetOptionalChildXmlValByName(&m_bRenderBelowWater, L"bRenderBelowWater");
 	pXML->GetOptionalChildXmlValByName(&m_bRenderAlways, L"bRenderAlways");
@@ -4636,7 +4650,8 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetOptionalChildXmlValByName(&m_iSMCargoVolume, L"iSMCargoVolume");
 	pXML->GetOptionalChildXmlValByName(&m_iConscriptionValue, L"iConscription");
 	pXML->GetOptionalChildXmlValByName(&m_iCultureGarrisonValue, L"iCultureGarrison");
-	pXML->GetOptionalChildXmlValByName(&m_iExtraCost, L"iExtraCost");
+	pXML->GetOptionalChildXmlValByName(&m_iBaseUpkeep, L"iBaseUpkeep");
+	if (m_iBaseUpkeep < 0) m_iBaseUpkeep = 0;
 	pXML->GetOptionalChildXmlValByName(&m_iAssetValue, L"iAsset");
 	pXML->GetOptionalChildXmlValByName(&m_iPowerValue, L"iPower");
 
@@ -4865,7 +4880,6 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetOptionalChildXmlValByName(&m_iTaunt, L"iTaunt");
 	pXML->GetOptionalChildXmlValByName(&m_iMaxHP, L"iMaxHP", 100);
 	pXML->GetOptionalChildXmlValByName(&m_iDamageModifier, L"iDamageModifier");
-	pXML->GetOptionalChildXmlValByName(&m_iCostModifier, L"iCostModifier");
 	pXML->GetOptionalChildXmlValByName(&m_iRBombardDamage, L"iRBombardDamage");
 	pXML->GetOptionalChildXmlValByName(&m_iRBombardDamageLimit, L"iRBombardDamageLimit");
 	pXML->GetOptionalChildXmlValByName(&m_iRBombardDamageMaxUnits, L"iRBombardDamageMaxUnits");
@@ -5327,7 +5341,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 
 	//TB Combat Mods End  TB SubCombat Mod end
 
-	getKillOutcomeList()->read(pXML, L"KillOutcomes");
+	m_KillOutcomeList.read(pXML, L"KillOutcomes");
 
 	if(pXML->TryMoveToXmlFirstChild(L"Actions"))
 	{
@@ -5437,7 +5451,6 @@ void CvUnitInfo::copyNonDefaults(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML)
 	if ( m_bIgnoreTerrainCost == bDefault )	m_bIgnoreTerrainCost = pClassInfo->isIgnoreTerrainCost();
 	if ( m_bNukeImmune == bDefault )	m_bNukeImmune = pClassInfo->isNukeImmune();
 	if ( m_bPrereqBonuses == bDefault )	m_bPrereqBonuses = pClassInfo->isPrereqBonuses();
-	if ( m_bPrereqReligion == bDefault )	m_bPrereqReligion = pClassInfo->isPrereqReligion();
 	if ( m_bMechanized == bDefault )	m_bMechanized = pClassInfo->isMechUnit();
 	if ( m_bRenderBelowWater == bDefault )	m_bRenderBelowWater = pClassInfo->isRenderBelowWater();
 	if ( m_bRenderAlways == bDefault )	m_bRenderAlways = pClassInfo->isRenderAlways();
@@ -5849,7 +5862,7 @@ void CvUnitInfo::copyNonDefaults(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML)
 	if ( m_iSMCargoVolume == iDefault ) m_iSMCargoVolume = pClassInfo->getSMCargoVolume();
 	if ( m_iConscriptionValue == iDefault ) m_iConscriptionValue = pClassInfo->getConscriptionValue();
 	if ( m_iCultureGarrisonValue == iDefault ) m_iCultureGarrisonValue = pClassInfo->getCultureGarrisonValue();
-	if ( m_iExtraCost == iDefault ) m_iExtraCost = pClassInfo->getExtraCost();
+	if ( m_iBaseUpkeep == iDefault ) m_iBaseUpkeep = pClassInfo->getBaseUpkeep();
 	if ( m_iAssetValue == iDefault ) m_iAssetValue = pClassInfo->getAssetValue(true);
 	if ( m_iPowerValue == iDefault ) m_iPowerValue = pClassInfo->getPowerValue(true);
 
@@ -5891,7 +5904,7 @@ void CvUnitInfo::copyNonDefaults(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML)
 		}
 	}
 
-	m_PropertyManipulators.copyNonDefaults(pClassInfo->getPropertyManipulators(),pXML);
+	m_PropertyManipulators.copyNonDefaults(&pClassInfo->m_PropertyManipulators, pXML);
 
 	if (!m_pExprTrainCondition)
 	{
@@ -5961,7 +5974,6 @@ void CvUnitInfo::copyNonDefaults(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML)
 	if ( m_iTaunt == iDefault ) m_iTaunt = pClassInfo->getTaunt(true);
 	if ( m_iMaxHP == 100 ) m_iMaxHP = pClassInfo->getMaxHP(true);
 	if ( m_iDamageModifier == iDefault ) m_iDamageModifier = pClassInfo->getDamageModifier();
-	if ( m_iCostModifier == iDefault ) m_iCostModifier = pClassInfo->getCostModifier();
 	if ( m_iRBombardDamage == iDefault ) m_iRBombardDamage = pClassInfo->getRBombardDamage();
 	if ( m_iRBombardDamageLimit == iDefault ) m_iRBombardDamageLimit = pClassInfo->getRBombardDamageLimit();
 	if ( m_iRBombardDamageMaxUnits == iDefault ) m_iRBombardDamageMaxUnits = pClassInfo->getRBombardDamageMaxUnits();
@@ -6373,7 +6385,7 @@ void CvUnitInfo::copyNonDefaults(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML)
 	//TB Combat Mods End  TB SubCombat Mod end
 	//setTotalModifiedCombatStrengthDetails();
 
-	getKillOutcomeList()->copyNonDefaults(pClassInfo->getKillOutcomeList(), pXML);
+	m_KillOutcomeList.copyNonDefaults(&pClassInfo->m_KillOutcomeList, pXML);
 
 	if (m_aOutcomeMissions.empty())
 	{
@@ -6455,12 +6467,14 @@ void CvUnitInfo::copyNonDefaults(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML)
 
 bool CvUnitInfo::readPass2(CvXMLLoadUtility* pXML)
 {
-	CvString szTextVal;
-
 	if (!CvHotkeyInfo::read(pXML))
 	{
 		return false;
 	}
+	CvString szTextVal;
+	pXML->GetOptionalChildXmlValByName(szTextVal, L"Capture");
+	m_iUnitCaptureType = pXML->GetInfoClass(szTextVal);
+
 	pXML->SetVariableListTagPair(&m_piFlankingStrikeUnit, L"FlankingStrikes", GC.getNumUnitInfos(), -1);
 	pXML->SetVariableListTagPair(&m_piUnitAttackModifier, L"UnitAttackMods", GC.getNumUnitInfos());
 	pXML->SetVariableListTagPair(&m_piUnitDefenseModifier, L"UnitDefenseMods", GC.getNumUnitInfos());
@@ -6470,32 +6484,72 @@ bool CvUnitInfo::readPass2(CvXMLLoadUtility* pXML)
 
 void CvUnitInfo::copyNonDefaultsReadPass2(CvUnitInfo* pClassInfo, CvXMLLoadUtility* pXML, bool bOver)
 {
-	for ( int i = 0; i < GC.getNumUnitInfos(); i++)
+	if (pClassInfo->m_piFlankingStrikeUnit != NULL)
 	{
-		if (bOver || getFlankingStrikeUnit(i) == -1 && pClassInfo->getFlankingStrikeUnit(i) != -1)
+		for (int i = 0; i < GC.getNumUnitInfos(); i++)
 		{
-			if (m_piFlankingStrikeUnit == NULL)
+			if (bOver || getFlankingStrikeUnit(i) == -1 && pClassInfo->getFlankingStrikeUnit(i) != -1)
 			{
-				CvXMLLoadUtility::InitList(&m_piFlankingStrikeUnit, GC.getNumUnitInfos(), -1);
+				if (m_piFlankingStrikeUnit == NULL)
+				{
+					CvXMLLoadUtility::InitList(&m_piFlankingStrikeUnit, GC.getNumUnitInfos(), -1);
+				}
+				m_piFlankingStrikeUnit[i] = pClassInfo->getFlankingStrikeUnit(i);
 			}
-			m_piFlankingStrikeUnit[i] = pClassInfo->getFlankingStrikeUnit(i);
 		}
-		if (bOver || getUnitAttackModifier(i) == -1 && pClassInfo->getUnitAttackModifier(i) != -1)
+	}
+	else
+	{
+		if (bOver && m_piFlankingStrikeUnit != NULL)
 		{
-			if (m_piUnitAttackModifier == NULL)
-			{
-				CvXMLLoadUtility::InitList(&m_piUnitAttackModifier, GC.getNumUnitInfos(), -1);
-			}
-			m_piUnitAttackModifier[i] = pClassInfo->getUnitAttackModifier(i);
+			SAFE_DELETE_ARRAY(m_piFlankingStrikeUnit);
 		}
-		if (bOver || getUnitDefenseModifier(i) == -1 && pClassInfo->getUnitDefenseModifier(i) != -1)
+	}
+	if (pClassInfo->m_piUnitAttackModifier != NULL)
+	{
+		for (int i = 0; i < GC.getNumUnitInfos(); i++)
 		{
-			if (m_piUnitDefenseModifier == NULL)
+			if (bOver || getUnitAttackModifier(i) == -1 && pClassInfo->getUnitAttackModifier(i) != -1)
 			{
-				CvXMLLoadUtility::InitList(&m_piUnitDefenseModifier, GC.getNumUnitInfos(), -1);
+				if (m_piUnitAttackModifier == NULL)
+				{
+					CvXMLLoadUtility::InitList(&m_piUnitAttackModifier, GC.getNumUnitInfos(), -1);
+				}
+				m_piUnitAttackModifier[i] = pClassInfo->getUnitAttackModifier(i);
 			}
-			m_piUnitDefenseModifier[i] = pClassInfo->getUnitDefenseModifier(i);
 		}
+	}
+	else
+	{
+		if (bOver && m_piUnitAttackModifier != NULL)
+		{
+			SAFE_DELETE_ARRAY(m_piUnitAttackModifier);
+		}
+	}
+	if (pClassInfo->m_piUnitDefenseModifier != NULL)
+	{
+		for (int i = 0; i < GC.getNumUnitInfos(); i++)
+		{
+			if (bOver || getUnitDefenseModifier(i) == -1 && pClassInfo->getUnitDefenseModifier(i) != -1)
+			{
+				if (m_piUnitDefenseModifier == NULL)
+				{
+					CvXMLLoadUtility::InitList(&m_piUnitDefenseModifier, GC.getNumUnitInfos(), -1);
+				}
+				m_piUnitDefenseModifier[i] = pClassInfo->getUnitDefenseModifier(i);
+			}
+		}
+	}
+	else
+	{
+		if (bOver && m_piUnitDefenseModifier != NULL)
+		{
+			SAFE_DELETE_ARRAY(m_piUnitDefenseModifier);
+		}
+	}
+	if (bOver || m_iUnitCaptureType == -1 && pClassInfo->getUnitCaptureType() != -1)
+	{
+		m_iUnitCaptureType = pClassInfo->getUnitCaptureType();
 	}
 }
 
@@ -6519,15 +6573,6 @@ bool CvUnitInfo::readPass3()
 		m_aszCivilizationNamesforPass3.clear();
 		m_aszCivilizationNamesValueforPass3.clear();
 	}
-	if (m_aszExtraXMLforPass3.size() < 1)
-	{
-		FAssert(false);
-		return false;
-	}
-	m_iUnitCaptureType = GC.getInfoTypeForString(m_aszExtraXMLforPass3[0]);
-
-	m_aszExtraXMLforPass3.clear();
-
 	return true;
 }
 

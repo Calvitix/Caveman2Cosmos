@@ -11,8 +11,6 @@
 #include "CvBuildingList.h"
 #include "CvUnitList.h"
 #include "CvGameObject.h"
-#include "CvGame.h"
-#include "CvGameAI.h"
 
 class CvPlot;
 class CvPlotGroup;
@@ -218,7 +216,7 @@ public:
 		public bst::iterator_facade<city_plot_iterator_base<Value_>, Value_*, bst::forward_traversal_tag, Value_*>
 	{
 		city_plot_iterator_base() : m_centerX(-1), m_centerY(-1), m_curr(nullptr), m_idx(0) {}
-		explicit city_plot_iterator_base(int centerX, int centerY) : m_centerX(centerX), m_centerY(centerY), m_curr(nullptr), m_idx(-1)
+		explicit city_plot_iterator_base(int centerX, int centerY) : m_centerX(centerX), m_centerY(centerY), m_curr(nullptr), m_idx(0)
 		{
 			increment();
 		}
@@ -227,11 +225,12 @@ public:
 		friend class bst::iterator_core_access;
 		void increment()
 		{
-			do
+			m_curr = nullptr;
+			while (m_curr == nullptr && m_idx < NUM_CITY_PLOTS)
 			{
-				++m_idx;
 				m_curr = plotCity(m_centerX, m_centerY, m_idx);
-			} while (m_curr == nullptr && m_idx < NUM_CITY_PLOTS);
+				++m_idx;
+			}
 		}
 		bool equal(city_plot_iterator_base const& other) const
 		{
@@ -260,7 +259,7 @@ public:
 	// Prefer to use plots() range instead of this for loops, searching etc.
 	CvPlot* getCityIndexPlot(int iIndex) const; // Exposed to Python
 
-	bool canWork(CvPlot* pPlot) const; // Exposed to Python
+	bool canWork(const CvPlot* pPlot) const; // Exposed to Python
 	void verifyWorkingPlot(int iIndex);
 	void verifyWorkingPlots();
 	void clearWorkingOverride(int iIndex); // Exposed to Python
@@ -500,7 +499,7 @@ public:
 	int cultureGarrison(PlayerTypes ePlayer) const; // Exposed to Python
 
 	//	Note arrival or leaving of a unit
-	void noteUnitMoved(CvUnit* pUnit) const;
+	void noteUnitMoved(const CvUnit* pUnit) const;
 	int getGlobalSourcedProperty(PropertyTypes eProperty) const;
 	int getTotalBuildingSourcedProperty(PropertyTypes eProperty) const;
 	int getTotalUnitSourcedProperty(PropertyTypes eProperty) const;
@@ -587,8 +586,8 @@ public:
 	int getUnitCombatOngoingTrainingTimeIncrement(UnitCombatTypes eIndex) const;
 	void setUnitCombatOngoingTrainingTimeIncrement(UnitCombatTypes eIndex, int iChange);
 	void updateOngoingTraining(UnitCombatTypes eCombat);
-	void assignOngoingTraining(UnitCombatTypes eCombat, CvPlot* pPlot);
-	bool canEquip(CvUnit* pUnit, PromotionTypes eEquipment) const;
+	void assignOngoingTraining(UnitCombatTypes eCombat, const CvPlot* pPlot);
+	bool canEquip(const CvUnit* pUnit, PromotionTypes eEquipment) const;
 
 	bool assignPromotionChecked(PromotionTypes ePromotion, CvUnit* pUnit) const;
 	void assignPromotionsFromBuildingChecked(const CvBuildingInfo& kBuilding, CvUnit* pLoopUnit) const;
@@ -640,7 +639,7 @@ public:
 /************************************************************************************************/
 
 	CvPlot* getRallyPlot() const; // Exposed to Python
-	void setRallyPlot(CvPlot* pPlot);
+	void setRallyPlot(const CvPlot* pPlot);
 
 	int getGameTurnFounded() const; // Exposed to Python
 	void setGameTurnFounded(int iNewValue);
@@ -1089,16 +1088,16 @@ public:
 	void changeBonusYieldRateModifier(YieldTypes eIndex, int iChange);
 
 	int getTradeYield(YieldTypes eIndex) const; // Exposed to Python
-	int totalTradeModifier(CvCity* pOtherCity = NULL) const; // Exposed to Python
+	int totalTradeModifier(const CvCity* pOtherCity = NULL) const; // Exposed to Python
 	int getPopulationTradeModifier() const;
 	int getPeaceTradeModifier(TeamTypes eTeam) const;
-	int getBaseTradeProfit(CvCity* pCity) const;
+	int getBaseTradeProfit(const CvCity* pCity) const;
 // BUG - Fractional Trade Routes - start
 #ifdef _MOD_FRACTRADE
-	int calculateTradeProfitTimes100(CvCity* pCity) const; // Exposed to Python
+	int calculateTradeProfitTimes100(const CvCity* pCity) const; // Exposed to Python
 #endif
 // BUG - Fractional Trade Routes - end
-	int calculateTradeProfit(CvCity* pCity) const; // Exposed to Python
+	int calculateTradeProfit(const CvCity* pCity) const; // Exposed to Python
 	int calculateTradeYield(YieldTypes eIndex, int iTradeProfit) const; // Exposed to Python
 // BUG - Trade Totals - start
 	void calculateTradeTotals(YieldTypes eIndex, int& iDomesticYield, int& iDomesticRoutes, int& iForeignYield, int& iForeignRoutes, PlayerTypes eWithPlayer = NO_PLAYER, bool bRound = false, bool bBase = false) const;
@@ -1254,6 +1253,7 @@ public:
 
 	int getBuildingOriginalOwner(BuildingTypes eIndex) const; // Exposed to Python
 	int getBuildingOriginalTime(BuildingTypes eIndex) const; // Exposed to Python
+	void setBuildingOriginalTime(BuildingTypes eIndex, int iNewValue); // Exposed to Python
 
 	int getUnitProduction(UnitTypes eIndex) const; // Exposed to Python
 	void setUnitProduction(UnitTypes eIndex, int iNewValue); // Exposed to Python
@@ -1486,12 +1486,10 @@ public:
 	bool isInquisitionConditions() const;
 	int calculateCorporationHealth() const;
 	int calculateCorporationHappiness() const;
-	virtual bool AI_isEmphasizeAvoidAngryCitizens() = 0;
-	virtual bool AI_isEmphasizeAvoidUnhealthyCitizens() = 0;
 	int getExtraYieldTurns() const;
 	void changeExtraYieldTurns (int iChange);
 	void setExtraYieldTurns(int iNewVal);
-	BuildTypes findChopBuild(FeatureTypes eFeature);
+	BuildTypes findChopBuild(FeatureTypes eFeature) const;
 	CultureLevelTypes getOccupationCultureLevel() const;
 	void setOccupationCultureLevel(CultureLevelTypes eNewValue);
 	CultureLevelTypes getMaxCultureLevelAmongPlayers() const;
@@ -1585,7 +1583,6 @@ public:
 	void changeNumPopulationEmployed(int iNewValue);
 
 	void removeWorstCitizenActualEffects(int iNumCitizens, int& iGreatPeopleRate, int& iHappiness, int& iHealthiness, int*& aiYields, int*& aiCommerces);
-	virtual int AI_plotValue(const CvPlot* pPlot, bool bAvoidGrowth, bool bRemove, bool bIgnoreFood = false, bool bIgnoreGrowth = false, bool bIgnoreStarvation = false) = 0;
 
 	void changeHealthPercentPerPopulation(int iChange);
 	int calculatePopulationHealth() const;
@@ -1601,9 +1598,13 @@ public:
 
 	int getAdditionalBaseCommerceRateByBuildingTimes100(CommerceTypes eIndex, BuildingTypes eBuilding);
 
-
 	bool isAutomatedCanBuild(BuildTypes eBuild) const; //Exposed to Python
 	void setAutomatedCanBuild(BuildTypes eBuild, bool bNewValue); //Exposed to Python
+
+	virtual bool AI_isEmphasizeAvoidAngryCitizens() const = 0;
+	virtual bool AI_isEmphasizeAvoidUnhealthyCitizens() const = 0;
+
+	virtual int AI_plotValue(const CvPlot* pPlot, bool bAvoidGrowth, bool bRemove, bool bIgnoreFood = false, bool bIgnoreGrowth = false, bool bIgnoreStarvation = false) = 0;
 
 	virtual int AI_getMilitaryProductionRateRank() const = 0;
 	virtual int AI_getNavalMilitaryProductionRateRank() const = 0;
@@ -1638,8 +1639,8 @@ public:
 	virtual void AI_preUnitTurn() = 0;
 	virtual void AI_noteUnitEscortNeeded() = 0;
 	virtual void AI_trained(UnitTypes eUnitType, UnitAITypes eUnitAIType) = 0;
-	virtual UnitTypes AI_bestUnit(int& iBestValue, int iNumSelectableTypes = -1, UnitAITypes* pSelectableTypes = NULL, bool bAsync = false, UnitAITypes* peBestUnitAI = NULL, bool bNoRand = false, bool bNoWeighting = false, CvUnitSelectionCriteria* criteria = NULL) = 0;
-	virtual UnitTypes AI_bestUnitAI(UnitAITypes eUnitAI, int& iBestValue, bool bAsync = false, bool bNoRand = false, CvUnitSelectionCriteria* criteria = NULL) = 0;
+	virtual UnitTypes AI_bestUnit(int& iBestValue, int iNumSelectableTypes = -1, UnitAITypes* pSelectableTypes = NULL, bool bAsync = false, UnitAITypes* peBestUnitAI = NULL, bool bNoRand = false, bool bNoWeighting = false, const CvUnitSelectionCriteria* criteria = NULL) = 0;
+	virtual UnitTypes AI_bestUnitAI(UnitAITypes eUnitAI, int& iBestValue, bool bAsync = false, bool bNoRand = false, const CvUnitSelectionCriteria* criteria = NULL) = 0;
 
 	virtual void AI_FlushBuildingValueCache(bool bRetainValues = false) = 0;
 
@@ -1670,77 +1671,58 @@ public:
 	// Evaluate a predefined list of buildings based on the specified criteria, returning a sorted list of the buildings and their scores
 	virtual bool AI_scoreBuildingsFromListThreshold(std::vector<ScoredBuilding>& scoredBuildings, const std::vector<BuildingTypes>& possibleBuildings, int iFocusFlags = 0, int iMaxTurns = MAX_INT, int iMinThreshold = 0, bool bAsync = false, AdvisorTypes eIgnoreAdvisor = NO_ADVISOR, bool bMaximizeFlaggedValue = false, PropertyTypes eProperty = NO_PROPERTY) = 0;
 	virtual int AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags = 0, bool bForTech = false) = 0;
-	virtual int AI_projectValue(ProjectTypes eProject) = 0;
-	virtual int AI_neededSeaWorkers() = 0;
+	virtual int AI_projectValue(ProjectTypes eProject) const = 0;
+	virtual int AI_neededSeaWorkers() const = 0;
 	virtual bool AI_isDefended(int iExtra = 0, bool bAllowAnyDefenders = true) = 0;
-/********************************************************************************/
-/**		BETTER_BTS_AI_MOD							9/19/08		jdog5000		*/
-/**																				*/
-/**		Air AI																	*/
-/********************************************************************************/
-/* original BTS code
-	virtual bool AI_isAirDefended(int iExtra = 0) = 0;
-*/
+
 	virtual bool AI_isAirDefended(bool bCountLand = 0, int iExtra = 0) = 0;
-	virtual bool AI_isAdequateHappinessMilitary(int iExtra = 0) = 0;
-/********************************************************************************/
-/**		BETTER_BTS_AI_MOD						END								*/
-/********************************************************************************/
+	virtual bool AI_isAdequateHappinessMilitary(int iExtra = 0) const = 0;
+
 	virtual bool AI_isDanger() const = 0;
 	virtual int evaluateDanger() = 0;
 	virtual int AI_neededDefenders() = 0;
-	virtual int AI_neededAirDefenders() = 0;
-	virtual int AI_minDefenders() = 0;
-	virtual bool AI_isEmphasizeAvoidGrowth() = 0;
-	virtual bool AI_isAssignWorkDirty() = 0;
+	virtual int AI_neededAirDefenders() const = 0;
+	virtual int AI_minDefenders() const = 0;
+	virtual bool AI_isEmphasizeAvoidGrowth() const = 0;
+	virtual bool AI_isAssignWorkDirty() const = 0;
 	virtual CvCity* AI_getRouteToCity() const = 0;
 	virtual void AI_setAssignWorkDirty(bool bNewValue) = 0;
-	virtual bool AI_isChooseProductionDirty() = 0;
+	virtual bool AI_isChooseProductionDirty() const = 0;
 	virtual void AI_setChooseProductionDirty(bool bNewValue) = 0;
-	virtual bool AI_isEmphasize(EmphasizeTypes eIndex) = 0; // Exposed to Python
+	virtual bool AI_isEmphasize(EmphasizeTypes eIndex) const = 0; // Exposed to Python
 	virtual void AI_setEmphasize(EmphasizeTypes eIndex, bool bNewValue) = 0;
-	virtual bool AI_isEmphasizeSpecialist(SpecialistTypes eIndex) = 0;
+	virtual bool AI_isEmphasizeSpecialist(SpecialistTypes eIndex) const = 0;
 	virtual void AI_setEmphasizeSpecialist(SpecialistTypes eIndex, bool bNewValue) = 0;
-	virtual int AI_getBestBuildValue(int iIndex) = 0;
+	virtual int AI_getBestBuildValue(int iIndex) const = 0;
 	virtual void AI_markBestBuildValuesStale() = 0;
 
-/************************************************************************************************/
-/* BETTER_BTS_AI_MOD                      06/25/09                                jdog5000      */
-/*                                                                                              */
-/* Debug                                                                                        */
-/************************************************************************************************/
 	virtual int AI_getTargetSize() = 0;
-	virtual int AI_getGoodTileCount() = 0;
-	virtual int AI_getImprovementValue( CvPlot* pPlot, ImprovementTypes eImprovement, int iFoodPriority, int iProductionPriority, int iCommercePriority, int iFoodChange, bool bOriginal = false ) = 0;
+	virtual int AI_getGoodTileCount() const = 0;
+	virtual int AI_getImprovementValue(CvPlot* pPlot, ImprovementTypes eImprovement, int iFoodPriority, int iProductionPriority, int iCommercePriority, int iFoodChange) = 0;
 	virtual void AI_getYieldMultipliers( int &iFoodMultiplier, int &iProductionMultiplier, int &iCommerceMultiplier, int &iDesiredFoodChange ) = 0;
-/************************************************************************************************/
-/* BETTER_BTS_AI_MOD                       END                                                  */
-/************************************************************************************************/
-	virtual int AI_totalBestBuildValue(CvArea* pArea) = 0;
-	virtual int AI_countBestBuilds(CvArea* pArea) = 0; // Exposed to Python
-	virtual BuildTypes AI_getBestBuild(int iIndex) = 0;
+
+	virtual int AI_totalBestBuildValue(const CvArea* pArea) const = 0;
+	virtual int AI_countBestBuilds(const CvArea* pArea) const = 0; // Exposed to Python
+	virtual BuildTypes AI_getBestBuild(int iIndex) const = 0;
 	virtual void AI_updateBestBuild() = 0;
 	virtual int AI_cityValue() const = 0;
-	virtual int AI_clearFeatureValue(int iIndex) = 0;
+	virtual int AI_clearFeatureValue(int iIndex) const = 0;
 
-	virtual int AI_calculateCulturePressure(bool bGreatWork = false) = 0;
-	virtual int AI_calculateWaterWorldPercent() = 0;
-	virtual int AI_countNumBonuses(BonusTypes eBonus, bool bIncludeOurs, bool bIncludeNeutral, int iOtherCultureThreshold, bool bLand = true, bool bWater = true) = 0;
-	virtual int AI_yieldMultiplier(YieldTypes eYield) = 0;
+	virtual int AI_calculateCulturePressure(bool bGreatWork = false) const = 0;
+	virtual int AI_calculateWaterWorldPercent() const = 0;
+	virtual int AI_countNumBonuses(BonusTypes eBonus, bool bIncludeOurs, bool bIncludeNeutral, int iOtherCultureThreshold, bool bLand = true, bool bWater = true) const = 0;
+	virtual int AI_yieldMultiplier(YieldTypes eYield) const = 0;
 	virtual int AI_playerCloseness(PlayerTypes eIndex, int iMaxDistance = 7) = 0;
 	virtual int AI_cityThreat(TeamTypes eTargetTeam = NO_TEAM, int* piThreatModifier = NULL) = 0;
 	virtual BuildingTypes AI_bestAdvancedStartBuilding(int iPass) = 0;
 
-	virtual int AI_getWorkersHave() = 0;
-	virtual int AI_getWorkersNeeded() = 0;
+	virtual int AI_getWorkersHave() const = 0;
+	virtual int AI_getWorkersNeeded() const = 0;
 	virtual void AI_changeWorkersHave(int iChange) = 0;
-/********************************************************************************/
-/* 	Worker Counting						03.08.2010				Fuyu			*/
-/********************************************************************************/
+
+	// Fuyu - Worker Counting - 03.08.2010
 	virtual int AI_workingCityPlotTargetMissionAIs(PlayerTypes ePlayer, MissionAITypes eMissionAI, UnitAITypes eUnitAI = NO_UNITAI, bool bSameAreaOnly = false) const = 0;
-/********************************************************************************/
-/* 	Worker Counting 											END 			*/
-/********************************************************************************/
+
 	virtual int AI_getBuildPriority() const = 0;
 
 	bool hasShrine(ReligionTypes eReligion) const;
@@ -1770,7 +1752,7 @@ public:
 	void recalculateModifiers();
 
 	void setBuildingListInvalid();
-	bool getBuildingListFilterActive(BuildingFilterTypes eFilter);
+	bool getBuildingListFilterActive(BuildingFilterTypes eFilter) const;
 	void setBuildingListFilterActive(BuildingFilterTypes eFilter, bool bActive);
 	BuildingGroupingTypes getBuildingListGrouping();
 	void setBuildingListGrouping(BuildingGroupingTypes eGrouping);
@@ -1787,7 +1769,7 @@ public:
 	BuildingTypes getBuildingListSelectedWonder();
 
 	void setUnitListInvalid();
-	bool getUnitListFilterActive(UnitFilterTypes eFilter);
+	bool getUnitListFilterActive(UnitFilterTypes eFilter) const;
 	void setUnitListFilterActive(UnitFilterTypes eFilter, bool bActive);
 	UnitGroupingTypes getUnitListGrouping();
 	void setUnitListGrouping(UnitGroupingTypes eGrouping);
@@ -2403,12 +2385,18 @@ public:
 		DECLARE_MAP_FUNCTOR(CvCity, bool, hasOrbitalInfrastructure);
 		DECLARE_MAP_FUNCTOR(CvCity, bool, isConnectedToCapital);
 		DECLARE_MAP_FUNCTOR(CvCity, bool, isGovernmentCenter);
+		DECLARE_MAP_FUNCTOR(CvCity, bool, AI_isMilitaryProductionCity);
+		DECLARE_MAP_FUNCTOR(CvCity, bool, AI_isNavalMilitaryProductionCity);
 
+		DECLARE_MAP_FUNCTOR(CvCity, int, getID);
+		DECLARE_MAP_FUNCTOR(CvCity, int, getPopulation);
 		DECLARE_MAP_FUNCTOR(CvCity, int, getRealPopulation);
 		DECLARE_MAP_FUNCTOR(CvCity, int, goodHealth);
 		DECLARE_MAP_FUNCTOR(CvCity, int, badHealth);
 		DECLARE_MAP_FUNCTOR(CvCity, int, happyLevel);
 		DECLARE_MAP_FUNCTOR(CvCity, int, unhappyLevel);
+
+		DECLARE_MAP_FUNCTOR(CvCity, const CvWString, getName);
 
 		DECLARE_MAP_FUNCTOR(CvCity, const CvArea*, area);
 		DECLARE_MAP_FUNCTOR(CvCity, const CvPlot*, plot);
@@ -2420,10 +2408,12 @@ public:
 		DECLARE_MAP_FUNCTOR_1(CvCity, bool, hasBonus, BonusTypes);
 		DECLARE_MAP_FUNCTOR_1(CvCity, bool, isCoastal, int);
 
+		DECLARE_MAP_FUNCTOR_1(CvCity, int, getCommerceRateTimes100, CommerceTypes);
 		DECLARE_MAP_FUNCTOR_1(CvCity, int, getBaseCommerceRateTimes100, CommerceTypes);
 		DECLARE_MAP_FUNCTOR_1(CvCity, int, getCultureTimes100, PlayerTypes);
 		DECLARE_MAP_FUNCTOR_1(CvCity, int, getNumBuilding, BuildingTypes);
 		DECLARE_MAP_FUNCTOR_1(CvCity, int, getYieldRate, YieldTypes);
+		DECLARE_MAP_FUNCTOR_1(CvCity, int, getModifiedBaseYieldRate, YieldTypes);
 
 		DECLARE_MAP_FUNCTOR_1(CvCity, const CvPlotGroup*, plotGroup, PlayerTypes);
 	};

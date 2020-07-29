@@ -13,8 +13,10 @@
 			<Strategy>TXT_KEY_BUILDING_BURIAL_GOODS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BURIAL_GOODS_CAVE</ArtDefineTag>
+			<MapCategoryTypes>
+				<MapCategoryType>MAPCATEGORY_EARTH</MapCategoryType>
+			</MapCategoryTypes>
 			<PrereqTech>TECH_CEREMONIAL_BURIAL</PrereqTech>
-			<iCost>-1</iCost>
 			<FreeBonus>BONUS_ANTIQUITIES_GRAVE_GOODS_CAVE</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
 			<PrereqInCityBuildings>
@@ -30,8 +32,10 @@
 			<Strategy>TXT_KEY_BUILDING_BURIAL_GOODS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BURIAL_GOODS_EARTH</ArtDefineTag>
+			<MapCategoryTypes>
+				<MapCategoryType>MAPCATEGORY_EARTH</MapCategoryType>
+			</MapCategoryTypes>
 			<PrereqTech>TECH_CEREMONIAL_BURIAL</PrereqTech>
-			<iCost>-1</iCost>
 			<FreeBonus>BONUS_ANTIQUITIES_GRAVE_GOODS_EARTH</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
 			<PrereqInCityBuildings>
@@ -47,8 +51,10 @@
 			<Strategy>TXT_KEY_BUILDING_BURIAL_GOODS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BURIAL_GOODS_FIRE</ArtDefineTag>
+			<MapCategoryTypes>
+				<MapCategoryType>MAPCATEGORY_EARTH</MapCategoryType>
+			</MapCategoryTypes>
 			<PrereqTech>TECH_CEREMONIAL_BURIAL</PrereqTech>
-			<iCost>-1</iCost>
 			<FreeBonus>BONUS_ANTIQUITIES_GRAVE_GOODS_FIRE</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
 			<PrereqInCityBuildings>
@@ -64,8 +70,10 @@
 			<Strategy>TXT_KEY_BUILDING_BURIAL_GOODS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BURIAL_GOODS_SKY</ArtDefineTag>
+			<MapCategoryTypes>
+				<MapCategoryType>MAPCATEGORY_EARTH</MapCategoryType>
+			</MapCategoryTypes>
 			<PrereqTech>TECH_CEREMONIAL_BURIAL</PrereqTech>
-			<iCost>-1</iCost>
 			<FreeBonus>BONUS_ANTIQUITIES_GRAVE_GOODS_SKY</FreeBonus>
 			<iNumFreeBonuses>1</iNumFreeBonuses>
 			<PrereqInCityBuildings>
@@ -81,6 +89,9 @@
 			<Strategy>TXT_KEY_BUILDING_BURIAL_GOODS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GRAVE_GOODS</ArtDefineTag>
+			<MapCategoryTypes>
+				<MapCategoryType>MAPCATEGORY_EARTH</MapCategoryType>
+			</MapCategoryTypes>
 			<PrereqTech>TECH_CEREMONIAL_BURIAL</PrereqTech>
 			<iCost>80</iCost>
 			<iConquestProb>70</iConquestProb>

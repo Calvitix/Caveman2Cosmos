@@ -1,8 +1,16 @@
+#include "CvGameCoreDLL.h"
+#include "CvGameAI.h"
+#include "CvPlayerAI.h"
+#include "CyArea.h"
+#include "CyCity.h"
+#include "CyPlayer.h"
+#include "CyPlot.h"
+#include "CySelectionGroup.h"
+#include "CyUnit.h"
+
 //
 // Python wrapper class for CvPlayer 
 //
-
-#include "CvGameCoreDLL.h"
 
 CyPlayer::CyPlayer() : m_pPlayer(NULL)
 {
@@ -649,9 +657,9 @@ int CyPlayer::calculateTotalCityUnhealthiness()
 	return m_pPlayer ? m_pPlayer->calculateTotalCityUnhealthiness() : -1;
 }
 
-int CyPlayer::calculateUnitCost()
+long long CyPlayer::getFinalUnitUpkeep()
 {
-	return m_pPlayer ? m_pPlayer->calculateUnitCost() : -1;
+	return m_pPlayer ? m_pPlayer->getFinalUnitUpkeep() : -1;
 }
 
 int CyPlayer::calculateUnitSupply()
@@ -673,25 +681,6 @@ int CyPlayer::calculateInflatedCosts()
 {
 	return m_pPlayer ? m_pPlayer->calculateInflatedCosts() : -1;
 }
-
-/************************************************************************************************/
-/* REVOLUTION_MOD                         02/04/09                                jdog5000      */
-/*                                                                                              */
-/* For rebels and BarbarianCiv                                                                  */
-/************************************************************************************************/
-int CyPlayer::getFreeUnitCountdown()
-{
-	return m_pPlayer ? m_pPlayer->getFreeUnitCountdown() : 0;
-}
-
-void CyPlayer::setFreeUnitCountdown( int iValue )
-{
-	if( m_pPlayer )
-		m_pPlayer->setFreeUnitCountdown(iValue);
-}
-/************************************************************************************************/
-/* REVOLUTION_MOD                          END                                                  */
-/************************************************************************************************/
 
 int CyPlayer::calculateGoldRate()
 {
@@ -728,9 +717,9 @@ bool CyPlayer::canEverResearch(int /*TechTypes*/ eTech)
 	return m_pPlayer ? m_pPlayer->canEverResearch((TechTypes)eTech) : false;
 }
 
-bool CyPlayer::canResearch(int /*TechTypes*/ eTech, bool bTrade)
+bool CyPlayer::canResearch(int /*TechTypes*/ eTech)
 {
-	return m_pPlayer ? m_pPlayer->canResearch((TechTypes)eTech, bTrade) : false;
+	return m_pPlayer ? m_pPlayer->canResearch((TechTypes)eTech) : false;
 }
 
 int /* TechTypes */ CyPlayer::getCurrentResearch()
@@ -1057,9 +1046,9 @@ int CyPlayer::getAdvancedStartTechCost(int /*TechTypes*/ eTech, bool bAdd)
 	return m_pPlayer ? m_pPlayer->getAdvancedStartTechCost((TechTypes) eTech, bAdd) : -1;
 }
 
-int CyPlayer::getAdvancedStartVisibilityCost(bool bAdd, CyPlot* pPlot)
+int CyPlayer::getAdvancedStartVisibilityCost(CyPlot* pPlot)
 {
-	return m_pPlayer ? m_pPlayer->getAdvancedStartVisibilityCost(bAdd, NULL != pPlot ? pPlot->getPlot() : NULL) : -1;
+	return m_pPlayer ? m_pPlayer->getAdvancedStartVisibilityCost(NULL != pPlot ? pPlot->getPlot() : NULL) : -1;
 }
 
 int CyPlayer::getEspionageSpending(int /*TeamTypes*/ eIndex)
@@ -1200,6 +1189,11 @@ int CyPlayer::getGreatPeopleThresholdModifier()
 int CyPlayer::getGreatGeneralsThresholdModifier()
 {
 	return m_pPlayer ? m_pPlayer->getGreatGeneralsThresholdModifier() : -1;
+}
+
+void CyPlayer::changeGreatGeneralsThresholdModifier(int iChange)
+{
+	if (m_pPlayer) m_pPlayer->changeGreatGeneralsThresholdModifier(iChange);
 }
 
 int CyPlayer::getGreatPeopleRateModifier()
@@ -1358,41 +1352,6 @@ int CyPlayer::getNumNukeUnits()
 int CyPlayer::getNumOutsideUnits()
 {
 	return m_pPlayer ? m_pPlayer->getNumOutsideUnits() : -1;
-}
-
-int CyPlayer::getBaseFreeUnits()
-{
-	return m_pPlayer ? m_pPlayer->getBaseFreeUnits() : -1;
-}
-
-int CyPlayer::getBaseFreeMilitaryUnits()
-{
-	return m_pPlayer ? m_pPlayer->getBaseFreeMilitaryUnits() : -1;
-}
-
-int CyPlayer::getFreeUnitsPopulationPercent()
-{
-	return m_pPlayer ? m_pPlayer->getFreeUnitsPopulationPercent() : -1;
-}
-
-int CyPlayer::getFreeMilitaryUnitsPopulationPercent()
-{
-	return m_pPlayer ? m_pPlayer->getFreeMilitaryUnitsPopulationPercent() : -1;
-}
-
-int CyPlayer::getGoldPerUnit()
-{
-	return m_pPlayer ? m_pPlayer->getGoldPerUnit() : -1;
-}
-
-int CyPlayer::getGoldPerMilitaryUnit()
-{
-	return m_pPlayer ? m_pPlayer->getGoldPerMilitaryUnit() : -1;
-}
-
-int CyPlayer::getExtraUnitCost()
-{
-	return m_pPlayer ? m_pPlayer->getExtraUnitCost() : -1;
 }
 
 int CyPlayer::getNumMilitaryUnits()
@@ -3235,7 +3194,7 @@ int CyPlayer::getBLListLength(int index)
 	return m_pPlayer ? m_pPlayer->m_pBuildLists->getListLength(index) : 0;
 }
 
-OrderData* CyPlayer::getBLOrder(int index, int iQIndex)
+const OrderData* CyPlayer::getBLOrder(int index, int iQIndex) const
 {
 	return m_pPlayer ? m_pPlayer->m_pBuildLists->getOrder(index, iQIndex) : NULL;
 }

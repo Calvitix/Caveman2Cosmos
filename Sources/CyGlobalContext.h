@@ -9,17 +9,12 @@
 //
 
 #include "CvGlobals.h"
-#include "CvArtFileMgr.h"
 
 class CyGame;
 class CyMap;
 class CyPlayer;
 class CvRandom;
-class CyEngine;
 class CyTeam;
-class CyArtFileMgr;
-class CyUserProfile;
-class CyVariableSystem;
 
 class CyGlobalContext
 {
@@ -36,6 +31,7 @@ public:
 /*********************************/
 /***** Parallel Maps - Begin *****/
 /*********************************/
+	void enableMultiMaps() { GC.enableMultiMaps(); }
 	bool multiMapsEnabled() const;
 	void switchMap(int iMap);
 	int getNumMapInfos() const;
@@ -55,7 +51,6 @@ public:
 	CyPlayer* getCyActivePlayer();
 	CvRandom& getCyASyncRand() const;
 	CyTeam* getCyTeam(int i);
-	CyArtFileMgr* getCyArtFileMgr() const;
 
 	CvEffectInfo* getEffectInfo(int i) const;
 	CvTerrainInfo* getTerrainInfo(int i) const;
@@ -215,8 +210,8 @@ public:
 	int getNumIdeaInfos() const { return GC.getNumIdeaInfos(); }
 	//int getNumTraitOptionEditsInfos() const { return GC.getNumTraitOptionEditsInfos(); }
 	int getNumAutomateInfos() const { return GC.getNumAutomateInfos(); }
-	int getNumCommandInfos() const { return GC.getNumCommandInfos(); }
-	int getNumControlInfos() const { return GC.getNumControlInfos(); }
+	int getNumCommandInfos() const { return NUM_COMMAND_TYPES; }
+	int getNumControlInfos() const { return NUM_CONTROL_TYPES; }
 	int getNumMissionInfos() const { return GC.getNumMissionInfos(); }
 	int getNumActionInfos() const { return GC.getNumActionInfos(); }
 	int getNumPromotionInfos() const { return GC.getNumPromotionInfos(); }
@@ -243,7 +238,7 @@ public:
 	int getNumNewConceptInfos() const { return GC.getNumNewConceptInfos(); }
 	int getNumCityTabInfos() const { return GC.getNumCityTabInfos(); }
 	int getNumCalendarInfos() const { return GC.getNumCalendarInfos(); }
-	int getNumPlayerOptionInfos() const { return GC.getNumPlayerOptionInfos(); }
+	int getNumPlayerOptionInfos() const { return NUM_PLAYEROPTION_TYPES; }
 	int getNumGameOptionInfos() const { return GC.getNumGameOptionInfos(); }
 	int getNumMPOptionInfos() const { return GC.getNumMPOptionInfos(); }
 	int getNumForceControlInfos() const { return GC.getNumForceControlInfos(); }
@@ -290,7 +285,6 @@ public:
 	// Globals Defines
 	//////////////////////
 
-	CyVariableSystem* getCyDefinesVarSystem();
 /************************************************************************************************/
 /* MOD_COMPONENT_CONTROL                   08/02/07                            MRGENIE          */
 /*                                                                                              */
@@ -432,9 +426,9 @@ public:
 	int getNPC1_TEAM() const { return GC.getNPC1_TEAM(); }
 	int getNPC0_PLAYER() const { return GC.getNPC0_PLAYER(); }
 	int getNPC0_TEAM() const { return GC.getNPC0_TEAM(); }
-	int getINVALID_PLOT_COORD() const { return GC.getINVALID_PLOT_COORD(); }
-	int getNUM_CITY_PLOTS() const { return GC.getNUM_CITY_PLOTS(); }
-	int getCITY_HOME_PLOT() const { return GC.getCITY_HOME_PLOT(); }
+	int getINVALID_PLOT_COORD() const { return INVALID_PLOT_COORD; }
+	int getNUM_CITY_PLOTS() const { return NUM_CITY_PLOTS; }
+	int getCITY_HOME_PLOT() const { return CITY_HOME_PLOT; }
 
 // BUG - BUG Info - start
 	void setIsBug(bool bIsBug) { GC.setIsBug(bIsBug); }										// Exposed to Python

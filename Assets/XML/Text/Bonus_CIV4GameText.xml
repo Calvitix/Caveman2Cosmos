@@ -38,13 +38,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ADVANCED_REPLICATORS_PEDIA</Tag>
 		<English>An advanced replicator is a highly intelligent and versatile replicator that, if instructed, can create manufactured goods, structures, and copies of itself.</English>
-		<Italian>Un duplicatore avanzato è un duplicatore altamente intelligente e versatile che, se programmato, può creare oggetti, strutture oppure altri duplicatore.</Italian>
+		<Italian>Un duplicatore avanzato è un duplicatore altamente intelligente e versatile che, se programmato, può creare oggetti, strutture oppure altri duplicatori.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_AEROGEL</Tag>
 		<English>Aerogel</English>
 		<French>Aérogel</French>
-		<Italian>Aerogel</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_AEROGEL_PEDIA</Tag>
@@ -61,7 +60,6 @@
 		<Tag>TXT_KEY_BONUS_AINU</Tag>
 		<English>Ainu</English>
 		<French>Aïnou</French>
-		<Italian>Ainu</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_AIRCRAFT</Tag>
@@ -80,7 +78,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_AKA</Tag>
 		<English>Aka</English>
-		<Italian>Aka</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_AKKADIAN</Tag>
@@ -97,7 +94,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ALACALUFE</Tag>
 		<English>Alacalufe</English>
-		<Italian>Alacalufe</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ALBANIAN</Tag>
@@ -111,7 +107,6 @@
 		<French>Alcool</French>
 		<German>Alkohol</German>
 		<Italian>Alcool</Italian>
-		<Spanish>Alcohol</Spanish>
 		<Polish>Alkohol</Polish>
 	</TEXT>
 	<TEXT>
@@ -207,7 +202,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_AMIS</Tag>
 		<English>Amis</English>
-		<Italian>Amis</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_AMMUNITION</Tag>
@@ -226,8 +220,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ANASAZI</Tag>
 		<English>Anasazi</English>
-		<French>Anasazi</French>
-		<Italian>Anasazi</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ANCIENT_RELICS</Tag>
@@ -247,7 +239,6 @@
 		<Tag>TXT_KEY_BONUS_ANDAMANESE</Tag>
 		<English>Andamanese</English>
 		<French>Andamanaise</French>
-		<Italian>Andamanese</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ANDROIDS</Tag>
@@ -294,7 +285,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_APACHE</Tag>
 		<English>Apache</English>
-		<Italian>Apache</Italian>
 		<Polish>Apacze</Polish>
 	</TEXT>
 	<TEXT>
@@ -322,12 +312,10 @@
 		<Tag>TXT_KEY_BONUS_ARAGONESE</Tag>
 		<English>Aragonese</English>
 		<French>Aragone</French>
-		<Italian>Aragonese</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ARAWAK</Tag>
 		<English>Arawak</English>
-		<Italian>Arawak</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ARGENTINIAN</Tag>
@@ -363,7 +351,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ASHANTI</Tag>
 		<English>Ashanti</English>
-		<Italian>Ashanti</Italian>
 		<Polish>Aszanti</Polish>
 	</TEXT>
 	<TEXT>
@@ -408,7 +395,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_AUTOMOBILES</Tag>
 		<English>Automobiles</English>
-		<French>Automobiles</French>
 		<Italian>Automobili</Italian>
 		<Polish>Samochody</Polish>
 	</TEXT>
@@ -425,12 +411,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_AYMARA</Tag>
 		<English>Aymara</English>
-		<Italian>Aymara</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_AZANDE</Tag>
 		<English>Azande</English>
-		<Italian>Azande</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_AZTEC</Tag>
@@ -488,7 +472,6 @@
 		<Tag>TXT_KEY_BONUS_BANDANESE</Tag>
 		<English>Bandanese</English>
 		<French>Bandanais</French>
-		<Italian>Bandanese</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_BANGLADESHI</Tag>
@@ -537,7 +520,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_BASHKIR</Tag>
 		<English>Bashkir</English>
-		<French>Bashkir</French>
 		<Italian>Baschiro</Italian>
 	</TEXT>
 	<TEXT>
@@ -567,7 +549,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_BATEK</Tag>
 		<English>Batek</English>
-		<Italian>Batek</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_BAUXITE_ORE</Tag>
@@ -641,7 +622,6 @@
 		<Tag>TXT_KEY_BONUS_BENINESE</Tag>
 		<English>Beninese</English>
 		<French>Béninoise</French>
-		<Italian>Beninese</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_BERBER</Tag>
@@ -653,7 +633,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_BERLINITE</Tag>
 		<English>Berlinite</English>
-		<Italian>Berlinite</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_BERLINITE_PEDIA</Tag>
@@ -943,8 +922,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CAMBEBA</Tag>
 		<English>Cambeba</English>
-		<French>Cambeba</French>
-		<Italian>Cambeba</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CAMEL</Tag>
@@ -970,7 +947,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CANARI</Tag>
 		<English>Cañari</English>
-		<Italian>Cañari</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CANDLES</Tag>
@@ -1012,18 +988,15 @@
 		<Tag>TXT_KEY_BONUS_CANTONESE</Tag>
 		<English>Cantonese</English>
 		<French>Cantonais</French>
-		<Italian>Cantonese</Italian>
 		<Polish>Kantońska</Polish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CAPAYAN</Tag>
 		<English>Capayán</English>
-		<Italian>Capayán</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CARAL_SUPE</Tag>
 		<English>Caral Supe</English>
-		<Italian>Caral Supe</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CARBON_DIOXIDE_ICE</Tag>
@@ -1052,7 +1025,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CARBYNE</Tag>
 		<English>Carbyne</English>
-		<Italian>Carbyne</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CARBYNE_PEDIA</Tag>
@@ -1109,13 +1081,6 @@
 		<Tag>TXT_KEY_BONUS_CARVED_EMU_EGGS_PEDIA</Tag>
 		<English>Carved emu eggs are an art form made by carving a kalthi-parti, or emu egg. The practice began in the mid to late 19th century and, while it has been practiced by people in Australia from many backgrounds, it is often strongly associated with Aboriginal art. Some of the earliest carvers were not strictly Aboriginal and these carvers created very decorative and complicated designs that were popular at the time.</English>
 		<Italian>Le uova di emu intagliate sono una forma d'arte creata scolpendo un kalthi-parti, o uovo di emu. La pratica è iniziata tra la metà e la fine del XIX secolo e, sebbene sia stata praticata da australiani di diversa estrazione etnico-sociale, è spesso fortemente associata all'arte aborigena. Alcuni dei primi intagliatori non erano aborigeni e questi intagliatori crearono disegni molto decorativi e complicati, molto popolari all'epoca.</Italian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BONUS_CASTILIAN</Tag>
-		<English>Castilian</English>
-		<French>Castillan</French>
-		<Italian>Castigliano</Italian>
-		<Polish>Kastylijska</Polish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CAT</Tag>
@@ -1188,7 +1153,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CERMET</Tag>
 		<English>Cermet</English>
-		<Italian>Cermet</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CERMET_PEDIA</Tag>
@@ -1211,8 +1175,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CHACHAPOYA</Tag>
 		<English>Chachapoya</English>
-		<French>Chachapoya</French>
-		<Italian>Chachapoya</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CHALK</Tag>
@@ -1229,7 +1191,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CHAM</Tag>
 		<English>Cham</English>
-		<Italian>Cham</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CHAMORRAN</Tag>
@@ -1262,7 +1223,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CHAVIN</Tag>
 		<English>Chavín</English>
-		<Italian>Chavín</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CHECHEN</Tag>
@@ -1299,12 +1259,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CHEROKEE</Tag>
 		<English>Cherokee</English>
-		<Italian>Cherokee</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CHEYENNE</Tag>
 		<English>Cheyenne</English>
-		<Italian>Cheyenne</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CHILEAN</Tag>
@@ -1315,7 +1273,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CHIMU</Tag>
 		<English>Chimú</English>
-		<Italian>Chimú</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CHINESE</Tag>
@@ -1327,7 +1284,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CHIPPEWA</Tag>
 		<English>Chippewa</English>
-		<Italian>Chippewa</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CHOCOLATE</Tag>
@@ -1344,7 +1300,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CHOLA</Tag>
 		<English>Chola</English>
-		<Italian>Chola</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CHROMITE_ORE</Tag>
@@ -1371,7 +1326,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CHUMASH</Tag>
 		<English>Chumash</English>
-		<Italian>Chumash</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CINNABAR_ORE</Tag>
@@ -1480,8 +1434,6 @@
 		<Tag>TXT_KEY_BONUS_COCA</Tag>
 		<English>Coca</English>
 		<German>Koka</German>
-		<Italian>Coca</Italian>
-		<Spanish>Coca</Spanish>
 		<Polish>Koka</Polish>
 	</TEXT>
 	<TEXT>
@@ -1541,7 +1493,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_COMANCHE</Tag>
 		<English>Comanche</English>
-		<Italian>Comanche</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_COMPUTERS</Tag>
@@ -1692,7 +1643,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CREE</Tag>
 		<English>Cree</English>
-		<Italian>Cree</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CROATIAN</Tag>
@@ -1700,6 +1650,12 @@
 		<French>Croate</French>
 		<Italian>Croato</Italian>
 		<Polish>Chorwacka</Polish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_CRYSTAL_GLASSWARE</Tag>
+		<English>Crystal Glassware</English>
+		<French>Verrerie en cristal</French>
+		<Italian>Oggetti in cristallo</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CUBAN</Tag>
@@ -1743,7 +1699,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_DAHOMEY</Tag>
 		<English>Dahomey</English>
-		<Italian>Dahomey</Italian>
 		<Polish>Dahomejska</Polish>
 	</TEXT>
 	<TEXT>
@@ -1781,7 +1736,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_DAYAK</Tag>
 		<English>Dayak</English>
-		<Italian>Dayak</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_DEEP_SPACE_LIFEFORMS</Tag>
@@ -1823,7 +1777,6 @@
 		<Tag>TXT_KEY_BONUS_DENE</Tag>
 		<English>Dene</English>
 		<French>Déné</French>
-		<Italian>Dene</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_DIAMOND</Tag>
@@ -2000,7 +1953,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ECSTASY</Tag>
 		<English>Ecstasy</English>
-		<Italian>Ecstasy</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ECSTASY_PEDIA</Tag>
@@ -2178,6 +2130,12 @@
 		<Polish>[SPACE](%s2_player eksportuje %d1_num_bonus)[SPACE]</Polish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BONUS_FAKE_GEMS</Tag>
+		<English>Fake Gems</English>
+		<French>Fausses Gemmes</French>
+		<Italian>Gemme finte</Italian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BONUS_FATIMID</Tag>
 		<English>Fatimid</English>
 		<French>Fatimide</French>
@@ -2198,7 +2156,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_FEMTOBOTS</Tag>
 		<English>Femtobots</English>
-		<French>Femtobots</French>
 		<Italian>Femtobot</Italian>
 	</TEXT>
 	<TEXT>
@@ -2501,7 +2458,6 @@
 		<Tag>TXT_KEY_BONUS_FULLERENE</Tag>
 		<English>Fullerene</English>
 		<French>Fullerène</French>
-		<Italian>Fullerene</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_FULLERENE_PEDIA</Tag>
@@ -2525,7 +2481,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_FURAWI</Tag>
 		<English>Furawi</English>
-		<Italian>Furawi</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_FURNITURE</Tag>
@@ -2548,7 +2503,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_GAUCHO</Tag>
 		<English>Gaucho</English>
-		<Italian>Gaucho</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_GEMSTONE</Tag>
@@ -2780,7 +2734,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_GUARANI</Tag>
 		<English>Guaraní</English>
-		<Italian>Guaraní</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_GUATEMALAN</Tag>
@@ -2837,7 +2790,6 @@
 		<Tag>TXT_KEY_BONUS_HAIDA</Tag>
 		<English>Haida</English>
 		<French>Haïda</French>
-		<Italian>Haida</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HAITIAN</Tag>
@@ -2850,8 +2802,8 @@
 		<Tag>TXT_KEY_BONUS_HAPPY</Tag>
 		<English>Happy: +%d1_Change[ICON_HAPPY]</English>
 		<French>Moral: +%d1_Change[ICON_HAPPY]</French>
-		<German>[ICON_BULLET]Zufriedenheit: +%d1_Change[ICON_HAPPY]</German>
-		<Italian>Felici: +%d1_Change[ICON_HAPPY]</Italian>
+		<German>Zufriedenheit: +%d1_Change[ICON_HAPPY]</German>
+		<Italian>Morale: +%d1_Change[ICON_HAPPY]</Italian>
 		<Spanish>Feliz: +%d1_Change[ICON_HAPPY]</Spanish>
 		<Polish>Szczęśliwy: +%d1_Change[ICON_HAPPY]</Polish>
 	</TEXT>
@@ -2871,7 +2823,6 @@
 		<Tag>TXT_KEY_BONUS_HAUSA</Tag>
 		<English>Hausa</English>
 		<French>Haoussa</French>
-		<Italian>Hausa</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HAWAIIAN</Tag>
@@ -2964,13 +2915,11 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HEMUDU</Tag>
 		<English>Hemudu</English>
-		<Italian>Hemudu</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HENNA</Tag>
 		<English>Henna</English>
 		<French>Henné</French>
-		<German>Henna</German>
 		<Italian>Hennè</Italian>
 		<Spanish>Alheña</Spanish>
 	</TEXT>
@@ -2983,7 +2932,6 @@
 		<Tag>TXT_KEY_BONUS_HERERO</Tag>
 		<English>Herero</English>
 		<French>Héréro</French>
-		<Italian>Herero</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HIDE</Tag>
@@ -2996,6 +2944,17 @@
 		<Tag>TXT_KEY_BONUS_HIDE_PEDIA</Tag>
 		<English>A hide is an animal skin treated for human use. Although they are usually from large animals such as cows or buffalos, it can also refer to skins of smaller animals, such as goats, sheeps, deers, pigs, fishes, alligators, snakes, etc. All are used for shoes, clothes, leather bags, belts and other fashion accessories. Leather is also used in cars, upholstery, interior decorating, horse tack and harnesses. Skins are sometimes still gathered from hunting and processed at a domestic or artisanal level, but most leather making is now industrialized and large-scale.</English>
 		<Italian>Una pelle trattata è una pelle di animale trattata per uso umano. Sebbene di solito provengano da grandi animali come mucche o bufali, può anche riferirsi a pelli di animali più piccoli, come capre, pecore, cervi, maiali, pesci, alligatori, serpenti, ecc. Tutti questi tipi di pelle sono usati per produrre scarpe, vestiti, borse, cinture e altri accessori, ma anche per tappezzerie e decorazioni d'interni o di automobili, finimenti per cavalli e imbracature. Talvolta, alcune pelli possono provenire da animali cacciati e lavorate a livello domestico o artigianale, ma la maggior parte della produzione di pelletteria è ora industrializzata e su larga scala.</Italian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_HIERACOSPHINX</Tag>
+		<English>Hieracosphinx</English>
+		<French>Hiéracosphinx</French>
+		<Italian>Ieracosfinge</Italian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_HIERACOSPHINX_PEDIA</Tag>
+		<English>The hieracosphinx is a mythical beast found in Egyptian sculpture and European heraldry, with the head of a hawk and the body of a lion. Sometimes it is depicted with a headdress. The combination of the two animals makes the hieracosphinx a symbol of royalty.</English>
+		<Italian>La ieracosfinge è una bestia mitica, spesso presente nella scultura egizia e nell'araldica europea, con la testa di un falco e il corpo di un leone. A volte è raffigurata con un copricapo. La combinazione dei due animali rende la ieracosfinge un simbolo di regalità.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HIMYARITE</Tag>
@@ -3091,12 +3050,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HOPEWELL</Tag>
 		<English>Hopewell</English>
-		<Italian>Hopewell</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HOPI</Tag>
 		<English>Hopi</English>
-		<Italian>Hopi</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HORSE</Tag>
@@ -3132,26 +3089,21 @@
 		<Italian>Huasteco</Italian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BONUS_HUMAN_MOD_PEDIA</Tag>
+		<English>Human Modification line represents permanent change in human psyche, physiology, or nature</English>
+		<Italian>Gli umani augmentati sono degli umani a cui sono stati applicati dei cambiamenti permanenti di tipo psichico, fisiologico o naturale.</Italian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_ALIEN_HYBRID</Tag>
 		<English>Human Mod (Alien Hybrid)</English>
 		<French>Modif. Humain (Hybridation Alien)</French>
 		<Italian>Umano augmentato (Ibrido alieno)</Italian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_ALIEN_HYBRID_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_ARCHAILECT</Tag>
 		<English>Human Mod (Archailect)</English>
-		<French>Modif. Humain(Archailecte)</French>
+		<French>Modif. Humain (Archailecte)</French>
 		<Italian>Umano augmentato (IArchetipica)</Italian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_ARCHAILECT_PEDIA</Tag>
-		<English>Archailect is an ascended, post-singularity intelligence, that has grown vastly beyond even the Transapient level. It represents the highest level of known living beings, in terms of both thinking power and aggregate energy/mass. The term is a mesh of the phrase "archetypal AI intellect."</English>
-		<Italian>IArchetipica è un tipo di intelligenza ascesa post-singolarità, che è cresciuta ben al di là del livello transapiente. Rappresenta il livello più alto mai raggiunto dagli esseri viventi in termini di potere di pensiero e di massa/energia aggregata. Il termine è una fusione della frase "Intelligenza artificiale archetipica".</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_ATEMPORAL</Tag>
@@ -3160,20 +3112,10 @@
 		<Italian>Umano augmentato (Atemporale)</Italian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_ATEMPORAL_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_COGNITIVE_ENHANCEMENT</Tag>
 		<English>Human Mod (Cognitive Enhancement)</English>
 		<French>Modif. Humain (Amélioration cognitive)</French>
 		<Italian>Umano augmentato (Potenziamento cognitivo)</Italian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_COGNITIVE_ENHANCEMENT_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_COLD_TOLERANCE</Tag>
@@ -3182,20 +3124,10 @@
 		<Italian>Umano augmentato (Tolleranza al freddo)</Italian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_COLD_TOLERANCE_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_COLLECTIVE_CONSCIOUSNESS</Tag>
 		<English>Human Mod (Collective Consciousness)</English>
 		<French>Modif. Humain (Conscience collective)</French>
 		<Italian>Umano augmentato (Coscienza collettiva)</Italian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_COLLECTIVE_CONSCIOUSNESS_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_DESIGNER_BABIES</Tag>
@@ -3204,20 +3136,10 @@
 		<Italian>Umano augmentato (Bambini su misura)</Italian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_DESIGNER_BABIES_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_DIGITAL_IDENTITY</Tag>
 		<English>Human Mod (Digital Identity)</English>
 		<French>Modif. Humain (Identité numérique)</French>
 		<Italian>Umano augmentato (Identità digitale)</Italian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_DIGITAL_IDENTITY_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_DIGITAL_LIFESTYLE</Tag>
@@ -3226,20 +3148,10 @@
 		<Italian>Umano augmentato (Stile di vita digitale)</Italian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_DIGITAL_LIFESTYLE_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_ENLIGHTENED</Tag>
 		<English>Human Mod (Enlightened)</English>
 		<French>Modif. Humain (Illumination)</French>
 		<Italian>Umano augmentato (Illuminazione)</Italian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_ENLIGHTENED_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_GENE_EDITING</Tag>
@@ -3248,20 +3160,10 @@
 		<Italian>Umano augmentato (Modifica genetica)</Italian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_GENE_EDITING_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_GILLS</Tag>
 		<English>Human Mod (Gills)</English>
 		<French>Modif. Humain (Branchies)</French>
 		<Italian>Umano augmentato (Branchie)</Italian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_GILLS_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_HEAT_TOLERANCE</Tag>
@@ -3270,20 +3172,10 @@
 		<Italian>Umano augmentato (Tolleranza al calore)</Italian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_HEAT_TOLERANCE_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente della psiche, fisiologia o natura umana.</Italian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_HIGH_DIMENSIONAL</Tag>
 		<English>Human Mod (High-Dimensional)</English>
 		<French>Modif. Humain (Haute dimension)</French>
 		<Italian>Umano augmentato (Dimensione superiore)</Italian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_HIGH_DIMENSIONAL_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_IMMORTAL</Tag>
@@ -3292,20 +3184,10 @@
 		<Italian>Umano augmentato (Immortale)</Italian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_IMMORTAL_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_INDEFINITE_LIFESPAN</Tag>
 		<English>Human Mod (Indefinite Lifespan)</English>
 		<French>Modif. Humain (Durée de vie indéfinie)</French>
 		<Italian>Umano augmentato (Durata di vita indefinita)</Italian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_INDEFINITE_LIFESPAN_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_INFORMATION_BASED</Tag>
@@ -3314,20 +3196,10 @@
 		<Italian>Umano augmentato (Basato su informazione)</Italian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_INFORMATION_BASED_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_LUNARIS</Tag>
 		<English>Human Mod (Lunaris)</English>
 		<French>Modif. Humain (Lunaris)</French>
 		<Italian>Umano augmentato (Selenita)</Italian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_LUNARIS_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_MARTIAN</Tag>
@@ -3336,20 +3208,10 @@
 		<Italian>Umano augmentato (Marziano)</Italian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_MARTIAN_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_METAPHYSICAL</Tag>
 		<English>Human Mod (Metaphysical)</English>
 		<French>Modif. Humain (Métaphysique)</French>
 		<Italian>Umano augmentato (Metafisico)</Italian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_METAPHYSICAL_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_NANOMORPHISM</Tag>
@@ -3358,20 +3220,10 @@
 		<Italian>Umano augmentato (Nanomorfismo)</Italian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_NANOMORPHISM_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_NONSPATIAL</Tag>
 		<English>Human Mod (Nonspatial)</English>
 		<French>Modif. Humain (Nonspatial)</French>
 		<Italian>Umano augmentato (Nonspaziale)</Italian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_NONSPATIAL_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_NOVEL_SENSES</Tag>
@@ -3380,20 +3232,10 @@
 		<Italian>Umano augmentato (Nuovi sensi)</Italian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_NOVEL_SENSES_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_PURE_ENERGY</Tag>
 		<English>Human Mod (Pure Energy)</English>
 		<French>Modif. Humain (Energie pure)</French>
 		<Italian>Umano augmentato (Pura energia)</Italian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_PURE_ENERGY_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_RADIATION_TOLERANCE</Tag>
@@ -3402,20 +3244,10 @@
 		<Italian>Umano augmentato (Tolleranza alle radiazioni)</Italian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_RADIATION_TOLERANCE_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_ROBOTIC_BODY</Tag>
 		<English>Human Mod (Robotic Body)</English>
 		<French>Modif. Humain (Corps Robotique)</French>
 		<Italian>Umano augmentato (Corpo robotico)</Italian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_ROBOTIC_BODY_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_TRANSAPIENT</Tag>
@@ -3424,20 +3256,10 @@
 		<Italian>Umano augmentato (Transapiente)</Italian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_TRANSAPIENT_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_WINGS</Tag>
 		<English>Human Mod (Wings)</English>
 		<French>Modif. Humain (Ailes)</French>
 		<Italian>Umano augmentato (Ali)</Italian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_WINGS_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUMAN_MOD_ZERO_G_ADAPTATION</Tag>
@@ -3446,14 +3268,8 @@
 		<Italian>Umano augmentato (Adattamento a zero G)</Italian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_HUMAN_MOD_ZERO_G_ADAPTATION_PEDIA</Tag>
-		<English>A permanent change in human psyche, physiology, or nature.</English>
-		<Italian>Un cambio permanente nella psiche, fisiologia o natura umana.</Italian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUN</Tag>
 		<English>Hun</English>
-		<French>Hun</French>
 		<Italian>Unno</Italian>
 		<Polish>Huńska</Polish>
 	</TEXT>
@@ -3598,7 +3414,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_INDIGO</Tag>
 		<English>Indigo</English>
-		<German>Indigo</German>
 		<Italian>Indaco</Italian>
 		<Spanish>Índigo</Spanish>
 		<Polish>Indygo</Polish>
@@ -3618,7 +3433,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_INDUS</Tag>
 		<English>Indus</English>
-		<Italian>Indus</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_INGOTS_PEDIA</Tag>
@@ -3628,7 +3442,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_INUIT</Tag>
 		<English>Inuit</English>
-		<Italian>Inuit</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_IRANIAN</Tag>
@@ -3677,7 +3490,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_IROQUOIS</Tag>
 		<English>Iroquois</English>
-		<French>Iroquois</French>
 		<Italian>Irochese</Italian>
 		<Polish>Irokezów</Polish>
 	</TEXT>
@@ -3710,12 +3522,20 @@
 		<Italian>L'avorio è un materiale duro e bianco proveniente dalle zanne e dai denti degli animali, tradizionalmente elefanti, anche se il commercio di denti e zanne di altri animali è ben consolidato e diffuso; pertanto, "avorio" può essere correttamente utilizzato per descrivere eventuali denti o zanne di mammiferi di interesse commerciale che sono abbastanza grandi da poter essere scolpiti o lavorati. L'avorio è stato apprezzato fin dall'antichità nell'arte e per la realizzazione di una gamma di sculture in avorio, come denti finti, tasti di pianoforte, ventole, pedine del domino e tubi articolati. A partire dalla fine del XX secolo, il commercio nazionale e internazionale di avorio di specie minacciate è stato dichiarato illegale.</Italian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BONUS_JACKALOPE</Tag>
+		<English>Jackalope</English>
+		<French>Jackalope</French>
+		<Italian>Jackalope</Italian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_JACKALOPE_PEDIA</Tag>
+		<English>A jackalope is a mythical animal from North American folklore, described as a jackrabbit with antelope horns. The jackalope has appeared in published stories, poems, television shows, video games, and a low-budget mockumentary film. Researchers suggest that at least some of the tales of horned hares were inspired by sightings of rabbits infected with the Shope papilloma virus, that causes horn- and antler-like tumors to grow in various places on a rabbit's head and body.</English>
+		<Italian>Un jackalope è un animale mitico del folklore nordamericano, descritto come un coniglio selvatico con corna di antilope. Il jackalope è apparso in numerose storie, poesie, spettacoli televisivi, videogiochi e un finto documentario a basso budget. I ricercatori suggeriscono che alcuni degli avvistamenti di lepri cornute siano dovuti ad avvistamenti di conigli infetti dal papillomavirus di Shope, che causa la crescita di tumori a forma di corna (anche ramificate) in varie parti della testa o del corpo di un coniglio.</Italian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BONUS_JADE</Tag>
 		<English>Jade</English>
-		<French>Jade</French>
-		<German>Jade</German>
 		<Italian>Giada</Italian>
-		<Spanish>Jade</Spanish>
 		<Polish>Jadeity</Polish>
 	</TEXT>
 	<TEXT>
@@ -3782,12 +3602,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_JIVARO</Tag>
 		<English>Jivaro</English>
-		<Italian>Jivaro</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_JOMON</Tag>
 		<English>Jomon</English>
-		<Italian>Jomon</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_JORDANIAN</Tag>
@@ -3800,7 +3618,6 @@
 		<Tag>TXT_KEY_BONUS_JOSEON</Tag>
 		<English>Joseon</English>
 		<French>Joséon</French>
-		<Italian>Joseon</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_JUTE</Tag>
@@ -3810,7 +3627,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_KANEM_BORNU</Tag>
 		<English>Kanem-Bornu</English>
-		<Italian>Kanem-Bornu</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_KANGAROO</Tag>
@@ -3828,10 +3644,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_KAVA</Tag>
 		<English>Kava</English>
-		<French>Kava</French>
-		<German>Kava</German>
-		<Italian>Kava</Italian>
-		<Spanish>Kava</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_KAVA_PEDIA</Tag>
@@ -3853,7 +3665,6 @@
 		<Tag>TXT_KEY_BONUS_KEROSENE</Tag>
 		<English>Kerosene</English>
 		<French>Kérosène</French>
-		<Italian>Kerosene</Italian>
 		<Polish>Nafta</Polish>
 	</TEXT>
 	<TEXT>
@@ -3864,7 +3675,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_KEVLAR</Tag>
 		<English>Kevlar</English>
-		<Italian>Kevlar</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_KEVLAR_PEDIA</Tag>
@@ -3884,7 +3694,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_KHMER</Tag>
 		<English>Khmer</English>
-		<Italian>Khmer</Italian>
 		<Polish>Khmerska</Polish>
 	</TEXT>
 	<TEXT>
@@ -3895,12 +3704,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_KILLKE</Tag>
 		<English>Killke</English>
-		<Italian>Killke</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_KIPCHAK</Tag>
 		<English>Kipchak</English>
-		<Italian>Kipchak</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_KITARAN</Tag>
@@ -3910,12 +3717,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_KLAMATH</Tag>
 		<English>Klamath</English>
-		<Italian>Klamath</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_KOGI</Tag>
 		<English>Kogi</English>
-		<Italian>Kogi</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_KONGOLESE</Tag>
@@ -3939,7 +3744,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_KUGELBLITZ</Tag>
 		<English>Kugelblitz</English>
-		<Italian>Kugelblitz</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_KUGELBLITZ_PEDIA</Tag>
@@ -4074,13 +3878,6 @@
 		<English>The lemon is a citrus tree, a hybrid of cultivated origin. The fruit are cultivated primarily for their juice, though the pulp and rind (zest) are also used, primarily in cooking or mixing. Lemon juice is about 5% citric acid, which gives lemons a sour taste. This is a small tree, grows to 6 m (20 ft) but usually smaller. The branches are thorny, and form an open crown. The leaves are elliptical-acuminate. Flowers are violet and streaked in the interior and white on the outside. On a lemon tree, flowers and ripe fruits can be found at the same time. The first description of the lemon, which had been introduced from India two centuries earlier, is found in Arabic writings from the 12th century. They were cultivated in Genoa in the mid-fifteenth century, and appeared in the Azores in 1494. More recent research has identified lemons in the ruins of Pompeii. Lemons were once used by the British Royal navy to combat scurvy, as they provided a large amount of vitamin C.</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_LEONESE</Tag>
-		<English>Leonese</English>
-		<French>Léonais</French>
-		<Italian>Leonese</Italian>
-		<Polish>Leońska</Polish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BONUS_LEVITATION_GENERATORS</Tag>
 		<English>Levitation Generators</English>
 		<French>Générateurs de lévitation</French>
@@ -4094,8 +3891,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_LIANGZHU</Tag>
 		<English>Liangzhu</English>
-		<French>Liangzhu</French>
-		<Italian>Liangzhu</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_LIANGZHU_JADES</Tag>
@@ -4161,7 +3956,6 @@
 		<French>Lama</French>
 		<German>Lama</German>
 		<Italian>Lama</Italian>
-		<Spanish>Llama</Spanish>
 		<Polish>Lamy</Polish>
 	</TEXT>
 	<TEXT>
@@ -4189,7 +3983,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_LSD</Tag>
 		<English>LSD</English>
-		<Italian>LSD</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_LSD_PEDIA</Tag>
@@ -4199,17 +3992,14 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_LUBA</Tag>
 		<English>Luba</English>
-		<Italian>Luba</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_LULE</Tag>
 		<English>Lule</English>
-		<Italian>Lule</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_LUNDA</Tag>
 		<English>Lunda</English>
-		<Italian>Lunda</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_LUSITANIAN</Tag>
@@ -4245,7 +4035,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MADAN</Tag>
 		<English>Madan</English>
-		<Italian>Madan</Italian>
 		<Polish>Madańska</Polish>
 	</TEXT>
 	<TEXT>
@@ -4287,7 +4076,6 @@
 		<Tag>TXT_KEY_BONUS_MALINESE</Tag>
 		<English>Malinese</English>
 		<French>Malinais</French>
-		<Italian>Malinese</Italian>
 		<Polish>Malinezyjska</Polish>
 	</TEXT>
 	<TEXT>
@@ -4318,7 +4106,6 @@
 		<Tag>TXT_KEY_BONUS_MANGANESE</Tag>
 		<English>Manganese</English>
 		<French>Manganèse</French>
-		<Italian>Manganese</Italian>
 		<Polish>Mangan</Polish>
 	</TEXT>
 	<TEXT>
@@ -4331,7 +4118,6 @@
 		<English>Mango</English>
 		<French>Mangues</French>
 		<German>Mangos</German>
-		<Italian>Mango</Italian>
 		<Spanish>Mangos</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4341,18 +4127,15 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MANI</Tag>
 		<English>Mani</English>
-		<Italian>Mani</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MAORI</Tag>
 		<English>Maori</English>
-		<Italian>Maori</Italian>
 		<Polish>Maoryska</Polish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MAPUCHE</Tag>
 		<English>Mapuche</English>
-		<Italian>Mapuche</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MARBLE</Tag>
@@ -4368,9 +4151,8 @@
 		<English>Marble is a kind of limestone, used by man for millennia. It is a useful material for construction, especially in dry climates. Marble is an excellent material from which to make statues, as well. Marble surfaces can be polished to a beautiful sheen, but the rock remains attractive even when the surface is left rough. The Egyptians used marble blocks to line the outside of the Pyramid of Cheops. The Greeks used blocks of marble to construct some of their buildings; they also used the material to sculpt some of the world's great artworks. The Romans were the first to use slabs of marble as wall coverings. Marble remains one of the most popular construction and artistic materials extant.</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_MARRI</Tag>
-		<English>Marri</English>
-		<Italian>Marri</Italian>
+		<Tag>TXT_KEY_BONUS_MARIC</Tag>
+		<English>Maric</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MARTIAN_ALGAE</Tag>
@@ -4467,13 +4249,11 @@
 		<Tag>TXT_KEY_BONUS_MASAI</Tag>
 		<English>Masai</English>
 		<French>Masaï</French>
-		<Italian>Masai</Italian>
 		<Polish>Masajska</Polish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MASCAGNITE</Tag>
 		<English>Mascagnite</English>
-		<Italian>Mascagnite</Italian>
 		<Polish>Maskagnit</Polish>
 	</TEXT>
 	<TEXT>
@@ -4556,7 +4336,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MELONS</Tag>
 		<English>Melons</English>
-		<French>Melons</French>
 		<German>Melonen</German>
 		<Italian>Meloni</Italian>
 		<Spanish>Melones</Spanish>
@@ -4570,6 +4349,7 @@
 		<Tag>TXT_KEY_BONUS_MERINA</Tag>
 		<English>Merina</English>
 		<Italian>Merina</Italian>
+		<Polish>Merina</Polish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_METALLIC_HYDROGEN</Tag>
@@ -4645,7 +4425,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MICROCHIPS_PEDIA</Tag>
-		<English>An integrated circuit or monolithic integrated circuit (also referred to as an IC, a chip, or a microchip) is a set of electronic circuits on one small flat piece (or "chip") of semiconductor material that is normally silicon. The integration of large numbers of tiny MOS transistors into a small chip results in circuits that are orders of magnitude smaller, faster, and less expensive than those constructed of discrete electronic components. The IC's mass production capability, reliability, and building-block approach to circuit design has ensured the rapid adoption of standardized ICs in place of designs using discrete transistors. ICs are now used in virtually all electronic equipment and have revolutionized the world of electronics. Computers, mobile phones, and other digital home appliances are now inextricable parts of the structure of modern societies, made possible by the small size and low cost of ICs. </English>
+		<English>An integrated circuit or monolithic integrated circuit (also referred to as an IC, a chip, or a microchip) is a set of electronic circuits on one small flat piece (or "chip") of semiconductor material that is normally silicon. The integration of large numbers of tiny MOS transistors into a small chip results in circuits that are orders of magnitude smaller, faster, and less expensive than those constructed of discrete electronic components. The IC's mass production capability, reliability, and building-block approach to circuit design has ensured the rapid adoption of standardized ICs in place of designs using discrete transistors. ICs are now used in virtually all electronic equipment and have revolutionized the world of electronics. Computers, mobile phones, and other digital home appliances are now inextricable parts of the structure of modern societies, made possible by the small size and low cost of ICs.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MICROGENERATORS</Tag>
@@ -4692,7 +4472,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MING</Tag>
 		<English>Ming</English>
-		<Italian>Ming</Italian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_MING_VASE</Tag>
+		<English>Ming Vase</English>
+		<French>Vase Ming</French>
+		<Italian>Vaso Ming</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MINOAN</Tag>
@@ -4716,7 +4501,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MITHRIL</Tag>
 		<English>Mithril</English>
-		<Italian>Mithril</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MITHRIL_PEDIA</Tag>
@@ -4734,22 +4518,18 @@
 		<Tag>TXT_KEY_BONUS_MOCHE</Tag>
 		<English>Moche</English>
 		<French>Mochica</French>
-		<Italian>Moche</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MOCOVI</Tag>
 		<English>Mocoví</English>
-		<Italian>Mocoví</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MOHAWK</Tag>
 		<English>Mohawk</English>
-		<Italian>Mohawk</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MOLLO</Tag>
 		<English>Mollo</English>
-		<Italian>Mollo</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MONGOLIAN</Tag>
@@ -4782,13 +4562,11 @@
 		<Tag>TXT_KEY_BONUS_MUGHAL</Tag>
 		<English>Mughal</English>
 		<French>Moghol</French>
-		<Italian>Mughal</Italian>
 		<Polish>Mugali</Polish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MUISCA</Tag>
 		<English>Muisca</English>
-		<Italian>Muisca</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MUREX</Tag>
@@ -4817,7 +4595,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MUTAPA</Tag>
 		<English>Mutapa</English>
-		<Italian>Mutapa</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NABATEANS</Tag>
@@ -4828,12 +4605,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NAHUA</Tag>
 		<English>Nahua</English>
-		<Italian>Nahua</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NAMA</Tag>
 		<English>Nama</English>
-		<Italian>Nama</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NANOACTUATORS</Tag>
@@ -4908,7 +4683,6 @@
 		<Tag>TXT_KEY_BONUS_NATRON</Tag>
 		<English>Natron</English>
 		<French>Soude</French>
-		<Italian>Natron</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NATRON_PEDIA</Tag>
@@ -4930,19 +4704,16 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NAVAJO</Tag>
 		<English>Navajo</English>
-		<Italian>Navajo</Italian>
 		<Polish>Nawahowie</Polish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NAZCA</Tag>
 		<English>Nazca</English>
-		<Italian>Nazca</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NEPALESE</Tag>
 		<English>Nepalese</English>
 		<French>Nepalais</French>
-		<Italian>Nepalese</Italian>
 		<Polish>Nepalska</Polish>
 	</TEXT>
 	<TEXT>
@@ -5019,7 +4790,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NOK</Tag>
 		<English>Nok</English>
-		<Italian>Nok</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NOK_SCULPTURES</Tag>
@@ -5035,12 +4805,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NOONGAR</Tag>
 		<English>Noongar</English>
-		<Italian>Noongar</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NOOTKA</Tag>
 		<English>Nootka</English>
-		<Italian>Nootka</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NORMAN</Tag>
@@ -5082,12 +4850,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NUTELLA</Tag>
 		<English>Nutella</English>
-		<Italian>Nutella</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NUTELLA_PEDIA</Tag>
-		<English>Nutella is the brand name of a hazelnut chocolate spread. Manufactured by the Italian company Ferrero, it was introduced to the market in 1964. Nutella is made from sugar, modified palm oil, hazelnuts, cocoa, skimmed milk powder, whey powder, lecithin, and vanillin.</English>
+		<English>Nutella is the brand name of a hazelnut chocolate spread. Manufactured by the Italian company Ferrero, it was introduced to the market in 1964. Nutella is made from sugar, modified palm oil, hazelnuts, cocoa, skimmed milk powder, whey powder, lecithin, and vanillin. Its name is a portmanteau of the English word "nut" and the suffix "-ella", a meaningless suffix added to get a better sounding name.</English>
 		<German>Nutella ist ein süßer Haselnussbrotaufstrich des italienischen Herstellers Ferrero, der in Konsistenz und Geschmack an Nougat erinnert. Er besteht aus Zucker, Pflanzenöl, gerösteten Haselnüssen, Kakao, Milchpulver, Sojalecithin und Vanillin.</German>
+		<Italian>Nutella è il marchio di una crema di nocciole spalmabile. Prodotta dall'azienda italiana Ferrero, fu introdotta sul mercato nel 1964. Gli ingredienti sono zucchero, olio di palma, nocciole, cacao, latte scremato in polvere, siero di latte in polvere, lecitina e vanillina. Il suo nome deriva dalla parola inglese "nut" ("nocciola") e dal suffisso "-ella", un suffisso senza alcun significato, aggiunto per avere un nome orecchiabile.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NUTS</Tag>
@@ -5104,7 +4872,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NYLON</Tag>
 		<English>Nylon</English>
-		<Italian>Nylon</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_NYLON_PEDIA</Tag>
@@ -5115,7 +4882,6 @@
 		<Tag>TXT_KEY_BONUS_OBSIDIAN</Tag>
 		<English>Obsidian</English>
 		<French>Obsidienne</French>
-		<German>Obsidian</German>
 		<Italian>Ossidiana</Italian>
 		<Spanish>Obsidiana</Spanish>
 		<Polish>Obsydian</Polish>
@@ -5135,7 +4901,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ODAWA</Tag>
 		<English>Odawa</English>
-		<Italian>Odawa</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_OIL</Tag>
@@ -5166,7 +4931,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_OLIVES</Tag>
 		<English>Olives</English>
-		<French>Olives</French>
 		<German>Oliven</German>
 		<Italian>Olive</Italian>
 		<Spanish>Aceitunas</Spanish>
@@ -5221,8 +4985,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_OPIUM</Tag>
 		<English>Opium</English>
-		<French>Opium</French>
-		<German>Opium</German>
 		<Italian>Oppio</Italian>
 		<Spanish>Opio</Spanish>
 	</TEXT>
@@ -5234,7 +4996,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ORANG_ASLI</Tag>
 		<English>Orang Asli</English>
-		<Italian>Orang Asli</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ORGANIC_COMPUTERS</Tag>
@@ -5305,7 +5066,6 @@
 		<Tag>TXT_KEY_BONUS_PAIUTE</Tag>
 		<English>Paiute</English>
 		<French>Païute</French>
-		<Italian>Paiute</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PAKISTANI</Tag>
@@ -5361,7 +5121,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PAPYRUS</Tag>
 		<English>Papyrus</English>
-		<German>Papyrus</German>
 		<Italian>Papiro</Italian>
 		<Spanish>Papiro</Spanish>
 		<Polish>Papirus</Polish>
@@ -5380,7 +5139,6 @@
 		<Tag>TXT_KEY_BONUS_PARROTS</Tag>
 		<English>Parrots</English>
 		<French>Perroquets</French>
-		<German>Parrots</German>
 		<Italian>Pappagalli</Italian>
 		<Spanish>Loros</Spanish>
 		<Polish>Papugi</Polish>
@@ -5412,13 +5170,11 @@
 		<Tag>TXT_KEY_BONUS_PASHTUN</Tag>
 		<English>Pashtun</English>
 		<French>Pashtoune</French>
-		<Italian>Pashtun</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PASTA</Tag>
 		<English>Pasta</English>
 		<French>Pâtes</French>
-		<Italian>Pasta</Italian>
 		<Polish>Makaron</Polish>
 	</TEXT>
 	<TEXT>
@@ -5450,6 +5206,12 @@
 		<Tag>TXT_KEY_BONUS_PEAT_PEDIA</Tag>
 		<English>Peat, also known as turf, is an accumulation of partially decayed vegetation or organic matter. Peat forms in wetland conditions, where flooding or stagnant water obstructs the flow of oxygen from the atmosphere, slowing the rate of decomposition. The peatland ecosystem is the most efficient carbon sink on the planet, because peatland plants capture carbon dioxide naturally released from the peat, maintaining an equilibrium. Over time, the formation of peat is often the first step in the geological formation of fossil fuels such as coal, particularly low-grade coal such as lignite. Peat is harvested as an important source of fuel in certain parts of the world.</English>
 		<Italian>La torba è un accumulo di vegetazione parzialmente decomposta o di materia organica. La torba si forma in zone umide, dove inondazioni o acqua stagnante ostruiscono il flusso di ossigeno dall'atmosfera, rallentando il tasso di decomposizione. Una torbiera è il dissipatore di carbonio più efficiente del pianeta, perché le piante catturano l'anidride carbonica rilasciata naturalmente, mantenendo un equilibrio. Nel tempo, la formazione della torba è spesso il primo passo nella formazione geologica di combustibili fossili come il carbone, in particolare quello di bassa qualità come la lignite. La torba viene usata come importante fonte di combustibile in alcune parti del mondo.</Italian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_PEGASUS</Tag>
+		<English>Pegasus</English>
+		<French>Pégase</French>
+		<Italian>Pegaso</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PELTS</Tag>
@@ -5573,9 +5335,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PEYOTE</Tag>
 		<English>Peyote</English>
-		<French>Peyote</French>
-		<German>Peyote</German>
-		<Italian>Peyote</Italian>
 		<Spanish>Peyotes</Spanish>
 		<Polish>Pejotl</Polish>
 	</TEXT>
@@ -5596,7 +5355,7 @@
 		<Polish>Lek - każda substancja, niezależnie od pochodzenia (naturalnego lub syntetycznego), nadająca się do bezpośredniego wprowadzania do organizmu w odpowiedniej postaci farmaceutycznej w celu osiągnięcia pożądanego efektu terapeutycznego, lub w celu zapobiegania chorobie, często podawana w ściśle określonej dawce. Lekiem jest substancja modyfikująca procesy fizjologiczne w taki sposób, że hamuje przyczyny lub objawy choroby, lub zapobiega jej rozwojowi. Określenie lek stosuje się też w stosunku do substancji stosowanych w celach diagnostycznych (np. metoklopramid w diagnostyce hiperprolaktynemii) oraz środków modyfikujących nie zmienione chorobowo funkcje organizmu (np. środki antykoncepcyjne).</Polish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_PHILISTINES</Tag>
+		<Tag>TXT_KEY_BONUS_PHILISTINE</Tag>
 		<English>Philistines</English>
 		<Italian>Filisteo</Italian>
 	</TEXT>
@@ -5606,6 +5365,17 @@
 		<French>Phoenicien</French>
 		<Italian>Fenicio</Italian>
 		<Polish>Fenicka</Polish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_PHOENIX</Tag>
+		<English>Phoenix</English>
+		<French>Phénix</French>
+		<Italian>Fenice</Italian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_PHOENIX_PEDIA</Tag>
+		<English>A phoenix is a mythical long-lived bird that is cyclically regenerated or reborn, obtaining new life by arising from the ashes of its predecessor. It symbolized renewal in general, as well as entities and concepts such as the Sun, time, the Roman Empire, Christ, Mary, and virginity. According to some sources, the phoenix dies in a show of flames and combustion, although there are other sources that claim that the legendary bird dies and simply decomposes before being born again. According to some texts, the phoenix could live over 1,400 years before rebirth. Herodotus, Lucan, Pliny the Elder, Pope Clement I, Lactantius, Ovid, and Isidore of Seville are among those who have contributed to the retelling and transmission of the phoenix motif.</English>
+		<Italian>Una fenice è un uccello mitologico dalla lunga vita che si rigenera o rinasce ciclicamente, ottenendo nuova vita sorgendo dalle ceneri del suo predecessore. Simboleggiava il rinnovamento in generale, così come entità e concetti come il Sole, il tempo, l'Impero romano, Cristo, la Madonna e la verginità. Secondo alcune fonti, la morte della fenice avviene in modo spettacolare fra le fiamme, mentre altre fonti sostengono che il leggendario uccello semplicemente muoia e si decomponga normalmente prima di rinascere. Secondo alcuni testi, una fenice potrebbe vivere oltre 1400 anni, prima della rinascita. Erodoto, Lucano, Plinio il Vecchio, Papa Clemente I, Lattanzio, Ovidio e Isidoro di Siviglia sono tra quelli che hanno contribuito alla rivisitazione e alla trasmissione della leggenda della fenice.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PHONOGRAPHS</Tag>
@@ -5644,12 +5414,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PILAGA</Tag>
 		<English>Pilagá</English>
-		<Italian>Pilagá</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PIMA</Tag>
 		<English>Pima</English>
-		<Italian>Pima</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PISTACHIO</Tag>
@@ -5730,7 +5498,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_POCKET_UNIVERSE_PEDIA</Tag>
-		<English>In narrative, pocket universes are fictional naturally or artificially-created universes that exist within the bounds of another universe. The term pocket universe is derived from its illustration in the actual universe where it is usually portrayed as an orb which would fit in a pocket.</English>
+		<English>A pocket universe is a naturally or artificially-created universe, that exist within the bounds of another universe. The term is derived from its illustration in the actual universe, where it is usually portrayed as an orb which would fit in a pocket. In the inflationary theory, the concept defines a realm, like the one that contains the observable universe, as only one of many inflationary zones.</English>
+		<Italian>Un universo tascabile è un universo creato naturalmente o artificialmente, che esiste all'interno dei limiti di un altro universo. Il termine deriva dalla sua illustrazione nell'universo reale, dove di solito è rappresentato come un globo di grandezza tascabile. Nella teoria inflazionistica, il concetto definisce la realtà, come quella che contiene l'universo osservabile, come una di numerose zone inflazionistiche.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_POISON</Tag>
@@ -5876,7 +5645,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_POYA</Tag>
 		<English>Poya</English>
-		<Italian>Poya</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PRICKLY_PEAR</Tag>
@@ -5917,7 +5685,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PUELCHE</Tag>
 		<English>Puelche</English>
-		<Italian>Puelche</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PUMICE_STONE</Tag>
@@ -5930,6 +5697,8 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PUMICE_STONE_PEDIA</Tag>
 		<English>Pumice, called pumicite in its powdered or dust form, is a volcanic rock that consists of highly vesicular rough textured volcanic glass, which may or may not contain crystals. It is typically light colored. Scoria is another vesicular volcanic rock that differs from pumice in having larger vesicles and thicker vesicle walls and being dark colored and denser.</English>
+		<German>[COLOR_HIGHLIGHT_TEXT]Bimsstein[COLOR_REVERT] oder kurz Bims ist ein stark poröses vulkanisches Gestein, das entsteht, wenn zähflüssige Lava bei Eruptionen durch Gase aufgeschäumt wird. Seine Farbe kann je nach Lavaart und Einschlüssen stark variieren. Es gibt nahezu schwarzen und weißen Bims, aber auch sämtliche Zwischentöne. Bimsstein geht nicht unter, sondern schwimmt auf Wasser, was an seinen vielen Poren und der daraus resultierenden sehr geringen Dichte liegt.[NEWLINE]Bims wurde bereits seit Vorzeiten in Kreta als Baumaterial, Opfergabe, Reinigungs- und Heilmittel und für diverse andere Zwecke eingesetzt. Das Gestein wird dort häufig über die Strömung von den vulkanischen Nachbarinseln angespült. In der Antike nutzte man den Bimsstein bereits zur Körperpflege, zum Schärfen von Schreibfedern und zum Glätten von Pergamentleder. Auch heute wird das Material noch vielseitig eingesetzt, z.B. für die Herstellung von Leichtbetonsteinen und Dämmstoffen und zum Filtern von Wasser. Bimsstein ist für den Stone-washed-Effekt von Jeans verantwortlich und stellt einen Grundstoff für viele gärtnerische Substrate dar.</German>
+		<Polish>Pumeks (z łac. pumex), dawniej pemza - to wulkaniczna skała magmowa zbudowana z porowatego (ponad 50% porów) szkliwa wulkanicznego powstałego z silnie gazującej, pienistej lawy. Ma szklistą, drobnoziarnistą strukturę. Powstaje głównie z kwaśnych odmian lawy (riolitowej).</Polish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PUMPKIN</Tag>
@@ -5974,18 +5743,25 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_QIANG</Tag>
 		<English>Qiang</English>
-		<French>Qiang</French>
-		<Italian>Qiang</Italian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_QILIN</Tag>
+		<English>Qilin</English>
+		<French>Qilin</French>
+		<Italian>Qilin</Italian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_QILIN_PEDIA</Tag>
+		<English>A qilin is a mythical chimerical creature known in Chinese and other East Asian cultures, said to appear with the imminent arrival or passing of a sage or illustrious ruler. Qilin generally have Chinese dragon-like features, most notably their heads, eyes with thick eyelashes, manes that always flow upward and beards. The body is fully or partially scaled and often shaped like an ox, deer, or horse. They are always shown with cloven hooves. Qilin are thought to be a symbol of luck, good omens, protection, prosperity, success, and longevity by the Chinese; they are also a symbol of fertility, and often depicted in decorations as bringing a baby to a family.</English>
+		<Italian>Un qilin è una creatura mitica chimerica, nota nelle culture cinese e dell'Asia orientale, che si dice appaia all'arrivo o al passaggio imminente di un sovrano saggio o illustre. Generalmente, i lineamenti di un qilin sono simili a quelli di un dragone cinese, in particolare la testa, gli occhi con ciglia folte, le criniere che scorrono sempre verso l'alto e la barba. Il corpo è completamente o parzialmente coperto da scaglie, spesso a forma di bue, cervo o cavallo, e hanno sempre gli zoccoli. Si pensa che un qilin sia un simbolo di fortuna, buoni auspici, protezione, prosperità, successo e longevità da parte dei cinesi; sono anche un simbolo di fertilità e spesso raffigurati nelle decorazioni mentre portano un bimbo a una famiglia.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_QIN</Tag>
 		<English>Qin</English>
-		<Italian>Qin</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_QING</Tag>
 		<English>Qing</English>
-		<Italian>Qing</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_QUANTONIUM_CRYSTAL</Tag>
@@ -6020,18 +5796,21 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_QUECHUA</Tag>
 		<English>Quechua</English>
-		<Italian>Quechua</Italian>
 		<Polish>Keczua</Polish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_QUERANDI</Tag>
 		<English>Querandi</English>
-		<Italian>Querandi</Italian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_QUETZALCOATL</Tag>
+		<English>Quetzalcoatl</English>
+		<French>Quetzalcoatl</French>
+		<Italian>Quetzalcoatl</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_QULLA</Tag>
 		<English>Qulla</English>
-		<Italian>Qulla</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_RABBIT</Tag>
@@ -6058,9 +5837,19 @@
 		<Italian>Un ricevitore radio, noto anche come radio, è un dispositivo elettronico che riceve le onde radio e converte le informazioni trasportate da loro in una forma utilizzabile. Viene utilizzato con un'antenna, che intercetta le onde radio elettromagnetiche e le converte in modo che il ricevitore possa estrarre le informazioni desiderate. Il ricevitore utilizza filtri elettronici per separare il segnale di radiofrequenza desiderato da tutti gli altri segnali raccolti dall'antenna, un amplificatore elettronico per aumentare la potenza del segnale per un'ulteriore elaborazione e infine recuperare le informazioni desiderate attraverso la demodulazione. Il tipo più familiare di ricevitore radio per la maggior parte delle persone è un ricevitore radio che riproduce il suono trasmesso dalle stazioni radio; tuttavia i radioricevitori sono ampiamente utilizzati in televisori, telefoni cellulari, modem wireless e altri componenti di sistemi di comunicazione, controllo remoto e rete wireless.</Italian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BONUS_RAINBOW_SERPENT</Tag>
+		<English>Rainbow Serpent</English>
+		<French>Serpent Arc-en-ciel</French>
+		<Italian>Serpente arcobaleno</Italian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_RAINBOW_SERPENT_PEDIA</Tag>
+		<English>The Rainbow Serpent (or Rainbow Snake) is a common deity, often a creator god, in the mythology and a common motif in the art of Aboriginal Australia. It is named for the obvious identification between the shape of a rainbow and that of a snake. Some scholars have suggested that the link between snake and rainbow suggests the cycle of the seasons and the importance of water in human life. When the rainbow is seen in the sky, it is said to be the Rainbow Serpent moving from one waterhole to another, and the divine concept explained why some waterholes never dried up when drought struck. There are innumerable names and stories associated with the serpent, all of which communicate the significance and power of this being within Aboriginal traditions. It is viewed as a giver of life, through its association with water, but can be a destructive force if angry. The Rainbow Serpent is one of the oldest continuing religious beliefs in the world and continues to be a cultural influence today.</English>
+		<Italian>Il serpente arcobaleno è una divinità comune, spesso un dio creatore, nella mitologia e un motivo comune nell'arte degli aborigeni australiani. Trae il nome dalla somiglianza tra la forma di un arcobaleno e quella di un serpente. Alcuni studiosi hanno ipotizzato che il legame tra serpente e arcobaleno rappresenti il ciclo delle stagioni e l'importanza dell'acqua nella vita umana. Quando un arcobaleno appare in cielo, si dice che sia il serpente arcobaleno che si muove da una pozza d'acqua all'altra - questo concetto contribuirebbe a spiegare anche perché alcune pozze d'acqua non si fossero seccate durante i periodi di siccità. Ci sono innumerevoli nomi e storie associati al serpente, che comunicano il significato e il potere attribuito a questo essere all'interno delle tradizioni aborigene. È visto come un donatore di vita, attraverso la sua associazione con l'acqua, ma può essere una forza distruttiva se irato. Il serpente arcobaleno è una delle più antiche credenze religiose ancora esistenti al mondo e continua a esercitare la sua influenza culturale ancora oggi.</Italian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BONUS_RAPA_NUI</Tag>
 		<English>Rapa Nui</English>
-		<Italian>Rapa Nui</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_RARE_EARTH_MINERALS</Tag>
@@ -6112,7 +5901,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_RED_OCHER</Tag>
 		<English>Red Ocher</English>
-		<Italian>Red Ocher</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_REEDS</Tag>
@@ -6297,12 +6085,6 @@
 		<Polish>Rosyjski</Polish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_SABBATEAN</Tag>
-		<English>Sabbatean</English>
-		<French>Sabbatéenne</French>
-		<Italian>Sabbateo</Italian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BONUS_SADDLES</Tag>
 		<English>Saddles</English>
 		<French>Selles</French>
@@ -6341,7 +6123,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SAKA</Tag>
 		<English>Saka</English>
-		<Italian>Saka</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SALT</Tag>
@@ -6359,7 +6140,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SAMI</Tag>
 		<English>Sami</English>
-		<Italian>Sami</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SAMOAN</Tag>
@@ -6486,7 +6266,6 @@
 		<English>Seasoning</English>
 		<French>Condiments</French>
 		<Italian>Condimenti</Italian>
-		<Polish>Seasoning</Polish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SEASONING_PEDIA</Tag>
@@ -6501,12 +6280,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SEMANG</Tag>
 		<English>Semang</English>
-		<Italian>Semang</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SEMINOLE</Tag>
 		<English>Seminole</English>
-		<Italian>Seminole</Italian>
 		<Polish>Seminolska</Polish>
 	</TEXT>
 	<TEXT>
@@ -6518,7 +6295,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SENNAR</Tag>
 		<English>Sennar</English>
-		<Italian>Sennar</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SERBIAN</Tag>
@@ -6541,7 +6317,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SHANG</Tag>
 		<English>Shang</English>
-		<Italian>Shang</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SHANG_JADE_RITUAL_ITEMS</Tag>
@@ -6626,7 +6401,6 @@
 		<Tag>TXT_KEY_BONUS_SIAMESE</Tag>
 		<English>Siamese</English>
 		<French>Siamois</French>
-		<Italian>Siamese</Italian>
 		<Polish>Syjamska</Polish>
 	</TEXT>
 	<TEXT>
@@ -6639,7 +6413,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SICAN</Tag>
 		<English>Sicán</English>
-		<Italian>Sicán</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SICILIAN</Tag>
@@ -6688,7 +6461,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SILVER_ORE_PEDIA</Tag>
-		<English>Silver is a soft, white, lustrous transition metal, silver has the highest electrical and thermal conductivity of any metal and is found in mineral deposits and in free form. Slag heaps found in Asia Minor indicate that silver has been known about for a long time, and that it was being separated from lead as early as the fourth millennium BC. </English>
+		<English>Silver is a soft, white, lustrous transition metal, silver has the highest electrical and thermal conductivity of any metal and is found in mineral deposits and in free form. Slag heaps found in Asia Minor indicate that silver has been known about for a long time, and that it was being separated from lead as early as the fourth millennium BC.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SILVER_WARES</Tag>
@@ -6700,13 +6473,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SINTASHTA</Tag>
 		<English>Sintashta</English>
-		<Italian>Sintashta</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SIOUX</Tag>
 		<English>Sioux</English>
-		<French>Sioux</French>
-		<Italian>Sioux</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SKIS</Tag>
@@ -6781,7 +6551,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SONGHAI</Tag>
 		<English>Songhai</English>
-		<Italian>Songhai</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SOUTH_AFRICAN</Tag>
@@ -6955,7 +6724,6 @@
 		<Tag>TXT_KEY_BONUS_SUDANESE</Tag>
 		<English>Sudanese</English>
 		<French>Soudanaise</French>
-		<Italian>Sudanese</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SUGAR</Tag>
@@ -6972,7 +6740,7 @@
 		<French>La canne à sucre est une plante tropicale, vraisemblablement originaire de Nouvelle-Guinée. L'extraction du sucre s'est développée en Chine, en Inde et au Moyen-Orient, où on l'utilisait déjà pour la cuisine et les desserts. Au cours du XVIIIe siècle, les Européens ont développé un goût prononcé pour la confiture, les confiseries, le thé, le café et autres douceurs en tout genre. Le sucre est alors devenu très populaire, et sa production a connu de nombreux "booms" successifs.</French>
 		<German>Zuckerrohr (Saccharum officinarum) ist ein tropisches Grasgewächs aus der Familie der Süßgräser, das vermutlich aus Neu-Guinea stammt. Die Zuckerverarbeitung wurde in China, Indien und dem Mittleren Osten erfunden. Dort entstanden wenig später zahlreiche Gerichte und Desserts auf der Grundlage von Zucker. Im 18. Jahrhundert kamen die Europäer auf den Geschmack und verzehrten in großen Mengen Marmeladen, Bonbons, gesüßten Tee und Kaffee sowie andere Süßigkeiten. Durch diese Nachfrage wurde der Zucker außerordentlich populär. Seitdem hat seine Produktion und Vermarktung mehrere Aufschwünge erlebt.</German>
 		<Italian>La canna da zucchero è un'erba tropicale, probabilmente originaria della Nuova Guinea. La raffinazione dello zucchero è stata sviluppata in Cina, India e Medio Oriente, dove è diventato un ingrediente fondamentale nella preparazione di cibi e dolci. Durante il XVIII secolo, gli europei svilupparono il culto di marmellate, caramelle, tè, caffè e altre squisitezze in grandi quantità; per questo motivo, lo zucchero divenne incredibilmente popolare e visse dei grandi boom commerciali.</Italian>
-		<Spanish>La caña de azúcar es una planta tropical, probablemente originaria de Nueva Guinea. El refinado del azúcar se desarrolló en China, India y Oriente Medio, donde se convirtió en un elemento básico de la cocina y los postres. Durante el siglo XVIII, los europeos se aficionaron de manera creciente a las mermeladas, los caramelos, el té, el café y otros productos azucarados. Esta alta demanda hizo enormemente popular al azúcar, y su producción y comercialización han tenido un gran auge. </Spanish>
+		<Spanish>La caña de azúcar es una planta tropical, probablemente originaria de Nueva Guinea. El refinado del azúcar se desarrolló en China, India y Oriente Medio, donde se convirtió en un elemento básico de la cocina y los postres. Durante el siglo XVIII, los europeos se aficionaron de manera creciente a las mermeladas, los caramelos, el té, el café y otros productos azucarados. Esta alta demanda hizo enormemente popular al azúcar, y su producción y comercialización han tenido un gran auge.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SULPHUR</Tag>
@@ -7000,7 +6768,6 @@
 		<Tag>TXT_KEY_BONUS_SUNDANESE</Tag>
 		<English>Sundanese</English>
 		<French>Sundanaise</French>
-		<Italian>Sundanese</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SUPERINTELLIGENT_COMPUTERS</Tag>
@@ -7038,17 +6805,14 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SURINAMESE</Tag>
 		<English>Surinamese</English>
-		<Italian>Surinamese</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SWAHILI</Tag>
 		<English>Swahili</English>
-		<Italian>Swahili</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SWAZI</Tag>
 		<English>Swazi</English>
-		<Italian>Swazi</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SWEDISH</Tag>
@@ -7111,7 +6875,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TAGALOG</Tag>
 		<English>Tagalog</English>
-		<Italian>Tagalog</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TAHITIAN</Tag>
@@ -7123,13 +6886,11 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TAIRONA</Tag>
 		<English>Tairona</English>
-		<Italian>Tairona</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TAIWANESE</Tag>
 		<English>Taiwanese</English>
 		<French>Taiwanais</French>
-		<Italian>Taiwanese</Italian>
 		<Polish>Tajwańska</Polish>
 	</TEXT>
 	<TEXT>
@@ -7140,12 +6901,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TAMIL</Tag>
 		<English>Tamil</English>
-		<Italian>Tamil</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TANG</Tag>
 		<English>Tang</English>
-		<Italian>Tang</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TANKS</Tag>
@@ -7199,9 +6958,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TAR_PEDIA</Tag>
-		<English>Tar was used as seal for roofing shingles and to seal the hulls of ships and boats. For millennia wood tar was used to waterproof sails and boats, but today sails made from inherently waterproof synthetic substances have negated the need for tar. Wood tar is still used to seal traditional wooden boats and the roofs of historical shingle-roofed churches, as well as painting exterior walls of log buildings. Tar is also a general disinfectant.</English>
-		<Italian>Il catrame veniva usato come sigillante per i tetti e per le chiglie delle navi. Per millenni il catame è stato usato per rendere impermeabili vari tipi di imbarcazione; al giorno d'oggi, sostanze impermeabilizzanti sintetiche hanno reso il catrame obsoleto. Il catrame veine ancora usato per sigillare barche tradizionali e chiese con i tetti in legno, oltre che impermeabilizzare le pareti esterne delle case in legno; il catrame è anche un generico disinfettante.</Italian>
-		<Polish>Smoła, smoła surowa - produkty odgazowania węgla, łupków bitumicznych lub drewna, rzadko torfu. Składa się głównie z mieszaniny wielu rodzajów węglowodorów oraz innych związków organicznych, zawierających tlen, azot i siarkę, ponadto niektóre rodzaje smoły mogą zawierać pewną ilość grafitu i fulerenów.</Polish>
+		<English>Tar is a dark brown or black viscous liquid made of hydrocarbons and free carbon, obtained from a wide variety of organic materials through destructive distillation. Tar can be produced from coal, wood, petroleum, or peat. Tar-like products can also be produced from other forms of organic matter. Tar was used as seal for roofing shingles and tar paper, to seal the hulls of ships and boats, and also a general disinfectant. Tar was also used for public humiliation, known as "tarring and feathering", but it was quickly abandoned due to the temporary and permanent physical damage caused by the burns of the tar from the application.</English>
+		<Italian>Il catrame è un liquido viscoso marrone scuro o nero prodotto da idrocarburi e carbonio libero, ottenuto da un'ampia varietà di materiali organici attraverso distillazione distruttiva. Il catrame può essere prodotto da carbone, legno, petrolio o torba. Prodotti simili al catrame possono anche essere ottenuti da altre forme di materia organica. Il catrame veniva usato come impermeabilizzante per tegole e carta catramata, per gli scafi di navi e imbarcazioni e anche come disinfettante generale. Il catrame è stato anche usato come forma di tortura e punizione, nel quale una persona veniva incatramata e poi ricoperta di piume; il metodo fu rapidamente abbandonato a causa dei danni fisici temporanei e permanenti delle ustioni provocate del catrame ancora caldo.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TARASCAN</Tag>
@@ -7232,12 +6990,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TEA_PEDIA</Tag>
-		<English>Made from the leaves or buds of a bush, tea is the liquid created by soaking the extracted foliage in water and it is a popular beverage throughout the world. The "Camellia Sinesis," (tea plant), is grown in tropical and sub-tropical regions of the planet such as China or India. Originally from Southeast Asia, it early on became a staple in the diet of many person from the Orient. It was not until the sixteenth or seventeenth century that it was introduced to Europe as explorers crossed the globe in search of knowledge and treasure. Tea quickly became popular with the wealthy of Western Europe, and Britain would set up numerous plantations in its colony of India to help satiate the demand - India today remains the biggest producer of tea in the world.</English>
-		<French>Constitué de feuilles ou de bourgeons d'un buisson, le thé est préparé en trempant l'extrait de feuillage dans de l'eau, et c'est une boisson extrêmement populaire à travers le monde. Le "Camellia Sinesis" (la plante) pousse dans les régions tropicales et subtropicales de la planète, et notamment en Chine et en Inde. Originaire d'Asie du Sud-est, le thé devient très tôt un produit de base dans le régime alimentaire de nombreux habitants de l'Orient. Il n'est pas introduit avant le XVIe ou XVIIe siècles en Europe, quand les explorateurs font le tour du monde en quête de nouvelles connaissances et richesses. Le thé devient vite très populaire au sein des classes supérieures de l'Europe de l'ouest et la Grande-Bretagne crée de nombreuses plantations dans ses colonies des Indes pour répondre à la demande. L'Inde reste aujourd'hui le premier producteur mondial.</French>
-		<German>Tee ist ein heißes Aufgussgetränk aus den Blättern und Blattknospen der Teepflanze (Camellia sinensis). Diese immergrünen Sträucher wachsen wild in subtropischem Monsunklima, als Kulturpflanze wird er heute hauptsächlich in China und Indien angebaut. Das alte China ist das Mutterland des Teeanbaus. Hier ist bereits aus dem 2. Jahrhundert v.Chr. eine entsprechende Steuer belegt. Tee hatte eine immense Bedeutung für die chinesische und später auch die japanische Kultur. Dies spiegelt sich auch heute noch in den Teezeremonien wider, die ab dem 13. Jahrhundert entwickelt wurden. Erst im 16. oder 17. Jahrhundert brachten Forschungsreisende die Teepflanze schließlich auch nach Europa. Das Handelsmonopol lag zunächst bei den Niederländern und ging erst 1669 an die Britische Ostindien-Kompanie. Da der Tee als Getränk im reichen Westeuropa großen Anklang fand, legten die Briten in ihrer Kolonie Indien zahlreiche Plantagen an, um die steigende Nachfrage befriedigen zu können, und auch heute noch gehört Indien zu den größten Tee produzierenden Ländern der Welt.</German>
-		<Italian>Ricavato dalle foglie o dalle gemme di un arbusto, il tè è una bevanda popolare in tutto il mondo che si ottiene immergendo le foglie nell'acqua calda. la "camellia sinesis" (la pianta del tè) cresce nelle regioni tropicali e sub-tropicali del pianeta (Cina e India, per esempio). Originario del sudest asiatico, ben presto il tè entrò a far parte della dieta di molti orientali, mentre fu introdotto in Europa soltanto nel sedicesimo o diciassettesimo secolo, portato da esploratori che giravano il mondo in lungo e in largo in cerca di nuove conoscenze e tesori. Il tè raccolse in breve tempo il consenso delle classi agiate europee e per soddisfare la domanda, l'Inghilterra creò enormi piantagioni in India, che ancora oggi rimane il più grande produttore di tè al mondo.</Italian>
-		<Spanish>El té, líquido creado por la infusión en agua de las hojas o los brotes de un matorral, es una bebida que goza de gran fama en todo el mundo. La "camellia sinesis" (planta del té) crece en regiones tropicales y subtropicales del planeta, como China y la India. Procedente del sudeste de Asia, se convirtió desde muy pronto en la base de la dieta de muchos orientales. Hasta los siglos XVI o XVII no fue introducido en Europa por los aventureros que cruzaban el mundo en busca de conocimientos y tesoros. El té se hizo rápidamente popular entre la gente acomodada de Europa occidental, y los británicos crearían inmensas plantaciones en sus colonias de la India para satisfacer la demanda. En la actualidad, la India continúa siendo el mayor productor mundial.</Spanish>
-		<Polish>Herbata to zielona roślina z rodzaju kamelia, pochodząca z południowo-wschodniej Azji. Uprawia się krzewy herbaty chińskiej (Camellia sinensis, syn. Thea sinensis), drzewa herbaty asamskiej (Camellia assamica) oraz ich mieszańce – herbatę gruzińską i cejlońską. Uprawiana w wielu krajach strefy zwrotnikowej, także poza Azją, dla pączków i liści, z których po uprzednim przygotowaniu (suszenie, czasami fermentacja) przyrządza się napar o tej samej nazwie. Nazwą „herbata określa się również napary z innych ziół, np. herbata rumiankowa, herbata paragwajska, herbata Rooibos. Historia Herbaty - Jak głosi legenda, wszystko zaczęło się pewnego pięknego dnia w 2737 roku p.n.e. w Chinach. Tego dnia legendarny cesarz chiński - Szen Nung, zielarz i uczony, który ze względów higienicznych pił przegotowaną wodę, wypoczywał pod drzewem dzikiej herbaty. Wiał lekki wiatr i jego podmuch spowodował, że kilka listków wpadło do dzbana z wodą. Oczywiście cesarz zapatrzony w piękno natury nie zauważył tego, dopiero pijąc swój napój poznał smak, który go oczarował. Opowieść z Indii przypisuje początki picia herbaty mnichowi o imieniu Bodhidharma, który postanowił przez 7 lat medytować nie mrużąc oka. Gdy do końca kontemplacji został mu jeden dzień powieki zaczęły mu się zamykać, zerwał więc kilka liści z drzewa, pod którym się znajdował i zaczął je żuć. Od razu opuściło go zmęczenie. Japończycy mają inne zakończenie historii tego mnicha. Zmęczenie, które go opanowało przypisał powiekom, wyciął je więc i rzucił na ziemię. W tym miejscu natychmiast wyrósł krzew herbaty. Mnich zerwał kilka listków i zaczął je żuć. Jak się można domyślić, zmęczenie zniknęło. Takie są legendy, które w piękny sposób opisują odkrycie herbaty. A jak było naprawdę? Trudno powiedzieć. Wiadomo, że już od bardzo dawna napój ten znany jest w Chinach. Pierwsze pisemne wzmianki o tej roślinie pochodzą dopiero z VIII wieku p.n.e., z księgi Chou Huna (770 rok). Przez długie lata herbata była ceniona jako podstawowy napój, lek i środek wzmacniający, który wytwarzano z liści dzikiego drzewa herbacianego. Dopiero w III wieku n.e. rolnicy zaczęli sadzić krzaki herbaciane i z czasem rozwinęło się suszenie liści i przetwórstwo. W VIII wieku chiński poeta Lu You napisał Swiętą księgę herbaty, zawierającą opis krzewu herbacianego, narzędzi do zbioru i selekcji liści, przyborów do ceremonii przyrządzania i picia herbaty. Zawierała również spis plantacji i wielbicieli tego napoju. Liście herbaty zawierają znaczne ilości garbników (od 8 do 30%), z których najważniejszym jest tanina. Prócz nich występują tam: kofeina (teina) - do 4%, katechiny, cukry, związki białkowe, śladowe ilości olejku eterycznego, związki żywicowe, kwasy organiczne, enzymy, pektyny (2 - 3%), glikozydy i witaminy. W te ostatnie herbata jest bardzo bogata. Znaleźć w niej można karoten (prowitaminę A), witaminy B1, B2, PP, C, a przede wszystkim witaminę P (spośród roślin ją zawierających, herbata obok gryki ma jej najwięcej). Ponadto znajduje się w niej witamina K odpowiedzialna za krzepnięcie krwi.</Polish>
+		<English>Tea is an aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to East Asia. After water, it is the most widely consumed drink in the world. There are many different types of tea, with vastly different profiles of flavours that include sweet, nutty, floral or grassy notes. Tea has a stimulating effect in humans primarily due to its caffeine content. Tea originated in Southwest China during the Shang dynasty, where it was used as a medicinal drink. It was popularised as a recreational drink during the Chinese Tang dynasty, and tea drinking spread to other East Asian countries. Portuguese priests and merchants introduced it to Europe during the 16th century. During the 17th century, drinking tea became fashionable among Britons, who started large-scale production and commercialisation of the plant in India.</English>
+		<Italian>Il tè è una bevanda aromatica comunemente preparata versando acqua calda o bollente su foglie stagionate di [i]Camellia sinensis[/i], un arbusto sempreverde originario dell'Asia orientale. Dopo l'acqua, è la bevanda più consumata al mondo. Esistono molti tipi diversi di tè, con profili di sapori molto diversi che includono note dolci, nocciolate, floreali o erbose. Il tè ha un effetto stimolante sull'uomo principalmente a causa del suo contenuto di caffeina. Il tè è nato nel sud-ovest della Cina durante la dinastia Shang, dove veniva usato come bevanda medicinale. Fu reso popolare come bevanda ricreativa durante la dinastia Tang cinese e il consumo di tè si diffuse in altri paesi dell'Asia orientale. Sacerdoti e mercanti portoghesi lo introdussero in Europa nel corso del XVI secolo. Durante il XVII secolo, bere il tè divenne di moda tra i britannici, che iniziarono la produzione e la commercializzazione su larga scala della pianta in India.</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TELEVISIONS</Tag>
@@ -7266,14 +7020,26 @@
 		<Italian>La terracotta è una ceramica a base di argilla dal corpo poroso. La terracotta infornata non è a tenuta stagna, ma la brunitura superficiale del corpo prima della cottura può ridurne la porosità e uno strato di smalto può renderlo a tenuta stagna. È adatta per trasportare acqua in pressione sottoterra, per i vasi da giardino o per le decorazione di ambienti e per i contenitori di olio, le lampade a olio o i forni. La maggior parte degli altri usi, come stoviglie, tubazioni sanitarie o decorazione di edifici in ambienti freddi, richiede che la terracotta venga prima smaltata.</Italian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BONUS_TERRA_SIGILLATA</Tag>
+		<English>Terra Sigillata</English>
+		<French>Céramique sigillée</French>
+		<Italian>Ceramica sigillata</Italian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_TERRA_SIGILLATA_PEDIA</Tag>
+		<English>Terra sigillata, as an archaeological term, refers chiefly to a specific type of plain and decorated tableware made in Italy and in Gaul (France and the Rhineland) during the Roman Empire. These vessels have glossy surface slips ranging from a soft lustre to a brilliant glaze-like shine, in a characteristic colour range from pale orange to bright red; they were produced in standard shapes and sizes and were manufactured on an industrial scale and widely exported. The sigillata industries grew up in areas where there were existing traditions of pottery manufacture, and where the clay deposits proved suitable. The products of the Italian workshops are also known as "Aretine ware" (i.e. "wares from Arezzo") and have been collected and admired since the Renaissance. The wares made in the Gaulish factories are often referred to by English-speaking archaeologists as "samian ware".</English>
+		<Italian>Il termine "ceramica sigillata", in archeologia, si riferisce principalmente a un tipo specifico di stoviglie semplici e decorate prodotte in Italia e in Gallia (attuali Francia e Renania) al tempo dell'Impero romano. Questi oggetti hanno una superficie lucida, con una lucentezza che andava da morbida a brillante (simile a uno smalto) e con una gamma di colori che andava dall'arancio pallido al rosso brillante. Venivano prodotte in forme e dimensioni standardizzate, fabbricate su scala industriale e ampiamente esportate. Industrie di ceramica sigillata crebbero in aree dove già esistevano tradizioni di fabbricazione di ceramiche e dove i depositi di argilla si dimostrarono adatti. I prodotti delle officine italiane sono noti anche come "ceramiche aretine" e sono stati raccolti e ammirati fin dal Rinascimento. Gli articoli fabbricati nelle fabbriche galliche sono spesso definiti dagli archeologi di lingua inglese come "ceramiche samiane".</Italian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BONUS_TESSERACT</Tag>
 		<English>Tesseract</English>
 		<French>Tesseracte</French>
-		<Italian>Tesseract</Italian>
+		<Italian>Tesseratto</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TESSERACT_PEDIA</Tag>
-		<English>In geometry, the tesseract is the four-dimensional analog of the cube; the tesseract is to the cube as the cube is to the square. Just as the surface of the cube consists of six square faces, the hypersurface of the tesseract consists of eight cubical cells. The tesseract is one of the six convex regular 4-polytopes.</English>
+		<English>A tesseract is the four-dimensional analog of the cube. It is one of the six convex regular 4-polytopes, and has 16 vertices, 32 edges, 24 square faces and 8 three-dimensional cubic faces. The word "tesseract" was coined and first used in 1888 by Charles Howard Hinton in his book [i]A New Era of Thought[/i].</English>
+		<Italian>Un tesseratto è l'equivalente quadri-dimensionale del cubo. È uno dei sei politopi regolari convessi e ha 16 vertici, 32 spigoli, 24 facce quadrate e 8 facce tridimensionali cubiche. La parola "tesseratto" fu inventata e usata per la prima volta nel 1888 da Charles Howard Hinton nel suo libro [i]Una nuova era del pensiero[/i].</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TEXAN</Tag>
@@ -7393,22 +7159,18 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TIWI</Tag>
 		<English>Tiwi</English>
-		<Italian>Tiwi</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TLATILCO</Tag>
 		<English>Tlatilco</English>
-		<Italian>Tlatilco</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TLAXCALTEC</Tag>
 		<English>Tlaxcaltec</English>
-		<Italian>Tlaxcaltec</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TOBA</Tag>
 		<English>Toba</English>
-		<Italian>Toba</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TOBACCO</Tag>
@@ -7507,12 +7269,10 @@
 		<Tag>TXT_KEY_BONUS_TUAREG</Tag>
 		<English>Tuareg</English>
 		<French>Touareg</French>
-		<Italian>Tuareg</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TUCANO</Tag>
 		<English>Tucano</English>
-		<Italian>Tucano</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TUNGSTEN</Tag>
@@ -7531,7 +7291,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TUNGUS</Tag>
 		<English>Tungus</English>
-		<Italian>Tungus</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TUNISIAN</Tag>
@@ -7542,7 +7301,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TUPI</Tag>
 		<English>Tupi</English>
-		<Italian>Tupi</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TURKISH</Tag>
@@ -7560,7 +7318,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TURQUOISE</Tag>
 		<English>Turquoise</English>
-		<French>Turquoise</French>
 		<German>Türkise</German>
 		<Italian>Turchesi</Italian>
 		<Spanish>Turquesas</Spanish>
@@ -7610,8 +7367,8 @@
 		<Tag>TXT_KEY_BONUS_UNHAPPY</Tag>
 		<English>Unhappy: +%d1_Change[ICON_UNHAPPY]</English>
 		<French>Moral: +%d1_Change[ICON_UNHAPPY]</French>
-		<German>[ICON_BULLET]Unzufriedenheit: +%d1_Change[ICON_UNHAPPY]</German>
-		<Italian>Infelici: +%d1_Change[ICON_UNHAPPY]</Italian>
+		<German>Unzufriedenheit: +%d1_Change[ICON_UNHAPPY]</German>
+		<Italian>Morale: +%d1_Change[ICON_UNHAPPY]</Italian>
 		<Spanish>Infeliz: +%d1_Change[ICON_UNHAPPY]</Spanish>
 		<Polish>Niezadowoleni: +%d1_Change[ICON_UNHAPPY]</Polish>
 	</TEXT>
@@ -7641,7 +7398,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_URANIUM</Tag>
 		<English>Uranium</English>
-		<French>Uranium</French>
 		<German>Uran</German>
 		<Italian>Uranio</Italian>
 		<Spanish>Uranio</Spanish>
@@ -7815,13 +7571,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_WALRUS_PEDIA</Tag>
-		<English>The walrus (Odobenus rosmarus) is a large flippered marine mammal with a discontinuous distribution about the North Pole in the Arctic Ocean and subarctic seas of the Northern Hemisphere. The walrus is the only living species in the family Odobenidae and genus Odobenus. This species is subdivided into two subspecies: the Atlantic walrus (O. r. rosmarus) which lives in the Atlantic Ocean and the Pacific walrus (O. r. divergens) which lives in the Pacific Ocean. </English>
+		<English>The walrus (Odobenus rosmarus) is a large flippered marine mammal with a discontinuous distribution about the North Pole in the Arctic Ocean and subarctic seas of the Northern Hemisphere. The walrus is the only living species in the family Odobenidae and genus Odobenus. This species is subdivided into two subspecies: the Atlantic walrus (O. r. rosmarus) which lives in the Atlantic Ocean and the Pacific walrus (O. r. divergens) which lives in the Pacific Ocean.</English>
 		<Polish>Mors (łac. Odobenus rosmarus) - gatunek dużego drapieżnego ssaka morskiego, jedyny współcześnie żyjący przedstawiciel dawniej licznej w gatunki rodziny morsowatych (Odobenidae) i jedyny gatunek z rodzaju Odobenus. Mors pełnił ważną rolę w życiu mieszkańców Arktyki, którzy polowali na niego dla mięsa, skór, tłuszczu, kłów i kości.</Polish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_WARAY</Tag>
 		<English>Waray</English>
-		<Italian>Waray</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_WARES_PEDIA</Tag>
@@ -7831,7 +7586,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_WARI</Tag>
 		<English>Wari</English>
-		<Italian>Wari</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_WARP_DRIVES</Tag>
@@ -7868,6 +7622,17 @@
 		<Polish>Akratopega - woda podziemna, której mineralizacja wynosi 500-1000 mg/dm, a temperatura nie przekracza 20 C. W klasyfikacji wód ze względu na zawartość związków mineralnych znajduje się pomiędzy wodą słodką a mineralną. Produkowana jest w kilku rodzajach: silnie gazowana, gazowana, niegazowana, lekko gazowana oraz jako musująca Perlage.</Polish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BONUS_WATERPROOF_CEMENT</Tag>
+		<English>Waterproof Cement</English>
+		<French>Ciment imperméable</French>
+		<Italian>Cemento impermeabile</Italian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_WATERPROOF_CEMENT_PEDIA</Tag>
+		<English>Waterproof cement is a composite material composed of fine and coarse aggregate bonded together with a fluid cement ("cement paste") that hardens over time, with the addition of crystalline admixtures during batching to lower permeability. The reaction takes place when exposed to water and un-hydrated cement particles to form insoluble needle-shaped crystals, which fill capillary pores and micro-cracks. The mixture can expect to self-seal as constant exposure to water will continuously initiate crystallization to ensure permanent waterproof protection.</English>
+		<Italian>Il cemento impermeabile è un materiale composito fatto da aggregato fine e grossolano unito con un cemento fluido ("pasta di cemento") che si indurisce nel tempo, con l'aggiunta di additivi cristallini durante il dosaggio per ridurre la permeabilità. La reazione ha luogo quando acqua e particelle di cemento non idratate entrano in contatto, formando cristalli insolubili a forma di ago, che riempiono i pori e le micro-crepe. La mistura di fatto si autosigilla, poiché l'esposizione costante all'acqua avvia continuamente la cristallizzazione per garantire una protezione impermeabile permanente.</Italian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BONUS_WAX</Tag>
 		<English>Wax</English>
 		<French>Cire</French>
@@ -7882,12 +7647,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_WAYANA</Tag>
 		<English>Wayana</English>
-		<Italian>Wayana</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_WAYUU</Tag>
 		<English>Wayuu</English>
-		<Italian>Wayuu</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_WELSH</Tag>
@@ -8003,37 +7766,30 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_XIA</Tag>
 		<English>Xia</English>
-		<Italian>Xia</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_XIANBEI</Tag>
 		<English>Xianbei</English>
-		<Italian>Xianbei</Italian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_XIONGU</Tag>
+		<Tag>TXT_KEY_BONUS_XIONGNU</Tag>
 		<English>Xiongnu</English>
-		<Italian>Xiongnu</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_YAGHAN</Tag>
 		<English>Yaghan</English>
-		<Italian>Yaghan</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_YAGUA</Tag>
 		<English>Yagua</English>
-		<Italian>Yagua</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_YAMATO</Tag>
 		<English>Yamato</English>
-		<Italian>Yamato</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_YANOMAMI</Tag>
 		<English>Yanomami</English>
-		<Italian>Yanomami</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_YEMENI</Tag>
@@ -8056,7 +7812,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_YOLNGU</Tag>
 		<English>Yolngu</English>
-		<Italian>Yolngu</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ZANZIBARI</Tag>
@@ -8073,7 +7828,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ZENU</Tag>
 		<English>Zenú</English>
-		<Italian>Zenú</Italian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ZIMBABWEAN</Tag>
@@ -8096,12 +7850,10 @@
 		<Tag>TXT_KEY_BONUS_ZULU</Tag>
 		<English>Zulu</English>
 		<French>Zoulou</French>
-		<Italian>Zulu</Italian>
 		<Polish>Zulusów</Polish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_ZUNI</Tag>
 		<English>Zuñi</English>
-		<Italian>Zuñi</Italian>
 	</TEXT>
 </Civ4GameText>

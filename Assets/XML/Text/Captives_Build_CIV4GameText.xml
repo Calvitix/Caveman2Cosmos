@@ -435,7 +435,7 @@
 		<German>Zwangsarbeit - Vegetation abholzen</German>
 		<Italian>Disbosca una Vegetazione (Schiavo)</Italian>
 		<Spanish>Talar una vegetación (Forzado)</Spanish>
-		<Polish>UsuD Ro[linno[ (Prace Przym.)</Polish>
+		<Polish>Usun Rosliny (Prace Przym.)</Polish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_ROAD_SLAVE</Tag>
@@ -463,15 +463,6 @@
 		<Italian>Costruisci un campo degli spazzini (Schiavo)</Italian>
 		<Spanish>Scavenging Camp (Forzado)</Spanish>
 		<Polish>Obóz Zbieracz Padliny (Prace Przym.)</Polish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILD_SEED_CAMP_KILL_SLAVE</Tag>
-		<English>[LINK=IMPROVEMENT_SEED_CAMP]Gather Seeds[\LINK] (Forced/Consumed)</English>
-		<French>[LINK=IMPROVEMENT_SEED_CAMP]Récolter les céréales[\LINK] (Forcé/Détruit)</French>
-		<German>Zwangsarbeit - [LINK=IMPROVEMENT_SEED_CAMP]Körner sammeln[\LINK]</German>
-		<Italian>Costruisci un raccoglitore di cereali (Schiavo)</Italian>
-		<Spanish>Recolectar Granos (Forzado)</Spanish>
-		<Polish>Zbieraj Ziarna (Prace Przym.)</Polish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_SEED_CAMP_SLAVE</Tag>
@@ -566,6 +557,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_TERRAFORM_TUNDRA_SLAVE</Tag>
 		<English>Terraform Towards [LINK=IMPROVEMENT_TERRAFORM_TUNDRA]Tundra[\LINK] (Forced)</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_TERRAFORM_TAIGA_SLAVE</Tag>
+		<English>Terraform Towards [LINK=IMPROVEMENT_TERRAFORM_TUNDRA]Taiga[\LINK] (Forced)</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_THATCH_CUTTER_SLAVE</Tag>

@@ -13,13 +13,10 @@
 //
 
 
-#include "CvArea.h"
-#include "CvPlot.h"
 #include "CvPathGenerator.h"
 #include "CvMapInterfaceBase.h"
 
 
-class FAStar;
 class CvPlotGroup;
 
 
@@ -68,15 +65,8 @@ protected:
 	void setup();
 
 public:
-/************************************************************************************************/
-/* Afforess	                  Start		 07/27/10                                               */
-/*                                                                                              */
-/*                                                                                              */
-/************************************************************************************************/
-	int percentUnoccupiedLand(bool bExcludeWater = true, bool bIncludeBarbarian = false, bool bExcludePeaks = true, CvArea* pArea = NULL, int iRange = -1, CvPlot* pRangeFromPlot = NULL);
-/************************************************************************************************/
-/* Afforess	                     END                                                            */
-/************************************************************************************************/
+	//int percentUnoccupiedLand(bool bExcludeWater = true, bool bIncludeBarbarian = false, bool bExcludePeaks = true, CvArea* pArea = NULL, int iRange = -1, CvPlot* pRangeFromPlot = NULL);
+
 /*********************************/
 /***** Parallel Maps - Begin *****/
 /*********************************/
@@ -116,7 +106,7 @@ public:
 	void updateIrrigated();
 	void updateCenterUnit();
 	void updateWorkingCity();
-	void updateMinOriginalStartDist(CvArea* pArea);										// Exposed to Python
+	void updateMinOriginalStartDist(const CvArea* pArea);										// Exposed to Python
 	void updateYield();
 
 	void verifyUnitValidPlot();
@@ -242,7 +232,7 @@ public:
 
 	void resetPathDistance();																		// Exposed to Python
 	// Super Forts begin *canal* *choke*
-	int calculatePathDistance(CvPlot *pSource, CvPlot *pDest, CvPlot *pInvalidPlot = NULL);	// Exposed to Python
+	int calculatePathDistance(const CvPlot* pSource, const CvPlot* pDest, const CvPlot* pInvalidPlot = NULL) const;	// Exposed to Python
 	void calculateCanalAndChokePoints();	// Exposed to Python
 	// Super Forts end
 
@@ -301,13 +291,6 @@ protected:
 	FFreeListTrashArray<CvArea> m_areas;
 
 	void calculateAreas();
-
-public:
-	// AIAndy: Expose path generation functionality here to expose it to Python via CyMap
-	bool generatePathForHypotheticalUnit(const CvPlot* pFrom, const CvPlot* pTo, PlayerTypes ePlayer, UnitTypes eUnit, int iFlags, int iMaxTurns);
-	CvPath&	getLastPath();
-	int getLastPathStepNum();
-	CvPlot* getLastPathPlotByIndex(int index);
 };
 
 #endif

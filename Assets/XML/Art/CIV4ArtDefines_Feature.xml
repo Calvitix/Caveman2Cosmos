@@ -1,9 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-	<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jason Winokur (Firaxis Games) -->
-	<!-- Sid Meier's Civilization 4 -->
-	<!-- Copyright Firaxis Games 2005 -->
-	<!-- -->
-	<!-- Feature art path information -->
+<?xml version='1.0' encoding='UTF-8'?>
 <Civ4ArtDefines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Schema\Caveman2Cosmos.xsd">
 	<FeatureArtInfos>
 		<FeatureArtInfo>
@@ -615,7 +610,7 @@
 				<bGenerateRotations>0</bGenerateRotations>
 				<VarietyButton>Art/Interface/Buttons/terrainfeatures/coral.dds</VarietyButton>
 			</FeatureVariety>
-		</FeatureArtInfo>		
+		</FeatureArtInfo>
 		<FeatureArtInfo>
 			<Type>ART_DEF_FEATURE_CRATER</Type>
 			<bAnimated>0</bAnimated>
@@ -1896,27 +1891,6 @@
 				<FeatureDummyNodes/>
 				<bGenerateRotations>0</bGenerateRotations>
 				<VarietyButton>,Art/Interface/Buttons/Units/Transport.dds,Art/Interface/Buttons/FinalFrontier2_Atlas.dds,7,4</VarietyButton>
-			</FeatureVariety>
-		</FeatureArtInfo>
-		<FeatureArtInfo>
-			<Type>ART_DEF_FEATURE_RAINWATER_BASIN</Type>
-			<bAnimated>1</bAnimated>
-			<bRiverArt>0</bRiverArt>
-			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
-			<LightType>LIGHT_TYPE_SUN</LightType>
-			<fScale>1</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<Button>Art/Structures/Buildings/Great_Bath/RainWaterButton.dds</Button>
-			<FeatureVariety>
-				<FeatureArtPieces>
-					<FeatureArtPiece>
-						<ModelFile>Art/Structures/Buildings/Great_Bath/bath_middle_east_water.nif</ModelFile>
-						<Connections/>
-					</FeatureArtPiece>
-				</FeatureArtPieces>
-				<FeatureDummyNodes/>
-				<bGenerateRotations>0</bGenerateRotations>
-				<VarietyButton>Art/Structures/Buildings/Great_Bath/RainWaterButton.dds</VarietyButton>
 			</FeatureVariety>
 		</FeatureArtInfo>
 		<FeatureArtInfo>

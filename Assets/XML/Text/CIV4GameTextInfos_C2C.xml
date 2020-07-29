@@ -66,8 +66,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_NUKE_EXPLOSION_CHANCE</Tag>
-		<English>[ICON_BULLET]Chance of Nuclear Meltdown: .%d1_chance%% each round</English>
-		<French>[ICON_BULLET]Risque de fusion nucléaire : .%d1_chance%% à chaque tour</French>
+		<English>[ICON_BULLET]Chance of Nuclear Meltdown: %d1_chance in 10000 each round</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OBSOLETE_WITH</Tag>
@@ -301,6 +300,22 @@
 		<French>Les efforts d'enquête dans la ville de %s1_city ont abouti à l'identification d'un suspect recherché en lien avec des actes criminels odieux!</French>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MISC_PILLAGED_CITY_CAPTURED</Tag>
+		<English>You have pillaged %d1_Num [ICON_GOLD] from the capture of %s2_CityName!!!</English>
+		<French>Vous avez pillé %d1_Num [ICON_GOLD] en capturant %s2_CityName !</French>
+		<German>Ihr habt durch die Eroberung von %s2_CityName %d1_Num [ICON_GOLD] erbeutet!!!</German>
+		<Italian>Hai saccheggiato %d1_Num [ICON_GOLD] dalla conquista di %s2_CityName!!!</Italian>
+		<Spanish>Habéis saqueado %d1_Num [ICON_GOLD] con la captura de %s2_CityName.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_PILLAGED_CITY_RAZED</Tag>
+		<English>You have pillaged %d1_Num [ICON_GOLD] from the destruction of %s2_CityName!!!</English>
+		<French>Vous avez pillé %d1_Num [ICON_GOLD] pendant la destruction de %s2_CityName !</French>
+		<German>Ihr habt durch die Plünderung und Zerstörung der Stadt %s2_CityName %d1_Num [ICON_GOLD] erbeutet!!!</German>
+		<Italian>Hai saccheggiato %d1_Num [ICON_GOLD] dalla distruzione di %s2_CityName!</Italian>
+		<Spanish>Habéis saqueado %d1_Num [ICON_GOLD] con la destrucción de %s2_CityName.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MISC_PLACED_BONUS</Tag>
 		<English>The fruits of the land are revealed! You have successfully placed or discovered a new source of %s1_BonusName.</English>
 		<French>Les fruits de la terre se dévoilent! Vous avez réussi à placer ou à découvrir une nouvelle source de [COLOR_HIGHLIGHT_TEXT]%s1_BonusName[COLOR_REVERT].</French>
@@ -343,11 +358,11 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_WONDER_COMPLETED_UNKNOWN</Tag>
 		<English>%s1_WndrName has been built in a far away land!</English>
-		<French>[COLOR_GREY]Cette merveille ([COLOR_REVERT][COLOR_HIGHLIGHT_TEXT]%s1_WndrName[COLOR_REVERT])[COLOR_GREY] a &#233;t&#233; construite dans un pays lointain ![COLOR_REVERT]</French>
+		<French>[COLOR_GREY]Cette merveille ([COLOR_REVERT][COLOR_HIGHLIGHT_TEXT]%s1_WndrName[COLOR_REVERT])[COLOR_GREY] a été construite dans un pays lointain ![COLOR_REVERT]</French>
 		<German>Das Wunder %s1_WndrName wurde in einem fernen Land errichtet!</German>
-		<Italian>[NUM1:Il:La] %s1_WndrName &#232; [NUM1:stato costruito:stata costruita] in una terra lontana!</Italian>
+		<Italian>[NUM1:Il:La] %s1_WndrName è [NUM1:stato costruito:stata costruita] in una terra lontana!</Italian>
 		<Spanish>Han construido %s1_WndrName en una tierra muy lejana.</Spanish>
-	</TEXT>		
+	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_YOUR_CRIMINAL_CAUGHT</Tag>
 		<English>Your %s1_UnitName was thwarted and is now on the run from the law!</English>
@@ -539,8 +554,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_REQUIRES_TECH</Tag>
 		<English>[COLOR_WARNING_TEXT]Requires [COLOR_TECH_TEXT][LINK=%s1_TechType]%s2_TechName[\LINK][COLOR_REVERT][COLOR_REVERT]</English>
-		<French>[COLOR_WARNING_TEXT]Requiert [COLOR_TECH_TEXT][LINK=%s1_TechType]%s2_TechName[\LINK][COLOR_REVERT][COLOR_REVERT]
-</French>
+		<French>[COLOR_WARNING_TEXT]Requiert [COLOR_TECH_TEXT][LINK=%s1_TechType]%s2_TechName[\LINK][COLOR_REVERT][COLOR_REVERT]</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REQUIRES_TECH_ANYONE</Tag>

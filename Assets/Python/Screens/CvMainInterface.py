@@ -45,6 +45,7 @@ class CvMainInterface:
 		self.InputData = InputData.instance
 
 		self.bInitialize = True
+		self.bSetStartZoom = True
 		self.xRes = 0
 		self.yRes = 0
 
@@ -65,6 +66,7 @@ class CvMainInterface:
 		self.bCityChange = False
 		self.bCityEnter = False
 		self.bCityExit = False
+		self.bInverseShiftQueue = False
 		self.bGlobeview = False
 		self.bUpdateCityTab = False
 		self.bBuildWorkQueue = False
@@ -90,7 +92,6 @@ class CvMainInterface:
 
 
 	def interfaceScreen(self):
-		print "interfaceScreen"
 		if GAME.isPitbossHost(): return
 		# Cache Game Status
 		self.bNetworkMP		= GAME.isNetworkMultiPlayer()
@@ -106,7 +107,7 @@ class CvMainInterface:
 		self.GO_ONE_CITY_CHALLENGE	= GAME.isOption(GameOptionTypes.GAMEOPTION_ONE_CITY_CHALLENGE)
 		# First pass initialization.
 		if self.bInitialize:
-			# FOW
+			# FOV
 			if MainOpt.isRememberFieldOfView():
 				self.iField_View = int(MainOpt.getFieldOfView())
 			# Raw Yields
@@ -147,6 +148,8 @@ class CvMainInterface:
 			FONT_CENTER_JUSTIFY	= 1<<2
 			FONT_RIGHT_JUSTIFY	= 1<<1
 			FONT_LEFT_JUSTIFY	= 1<<0
+			// Toffer note: setTextAt(..., 1<<1, ...) doesn't work, it will always be left justified.
+			//			Use setText() instead, if interaction is not needed then setLabel() and setLabelAt() handle text justification.
 			'''
 			# Cache Icons
 			self.iconStrength			= u'%c' % GAME.getSymbolID(FontSymbols.STRENGTH_CHAR)
@@ -1308,10 +1311,12 @@ class CvMainInterface:
 				else:
 					screen.setHelpTextArea(self.xMidL, FontTypes.GAME_FONT, 4, self.yRes - 8, 0, False, "", True, False, 1<<0, 0)
 					self.bHelpTextFullY = True
+
 				if self.bSetStartZoom:
 					# CAMERA_START_DISTANCE also defines camera zoom where music is turned on/off, we want that to be quite low and the start zoom to be higher.
 					# Max zoom change from game to game, so the percentage zoom is relative to the initial zoom from CAMERA_START_DISTANCE
-					CyCamera().SetZoom(CyCamera().GetZoom() * 1.9)
+					CAM = CyCamera()
+					CAM.SetZoom(CAM.GetZoom() * 1.8)
 					self.bSetStartZoom = False
 
 			# This will update the flag widget for SP hotseat and debugging
@@ -1414,6 +1419,7 @@ class CvMainInterface:
 				if InCity:
 					bFirst = False
 				else:
+					self.bInverseShiftQueue = MainOpt.isInverseShiftForQueueing()
 					if AtUnit:
 						screen.hide("UnitButtons")
 					bFirst = True
@@ -2105,7 +2111,7 @@ class CvMainInterface:
 				xStart = xywh[0] + 8
 				aMap = self.aRel2TechMap
 				for i in xrange(iTechInfos):
-					if CyPlayer.canResearch(i, False):
+					if CyPlayer.canResearch(i):
 						szName = "WID|TECH|Selection" + str(i)
 						if i in aMap:
 							if not bCanFoundReligion or GAME.countKnownTechNumTeams(i):
@@ -2252,8 +2258,12 @@ class CvMainInterface:
 						iCurr = researchProgress + iOverflow
 
 						screen.setBarPercentage("ResearchBar", InfoBarTypes.INFOBAR_STORED, iCurr * 1.0 / researchCost)
-						if researchCost > iCurr and iResearchRate > 0:
-							self.researchBarDC.drawTickMarks(screen, iCurr, researchCost, iResearchRate)
+						self.researchBarDC.drawTickMarks(screen, 0, 0, 0) # remove old tick marks
+
+						if iResearchRate > 0 and researchCost > iCurr:
+							# Ticks - only bother with a 100 or less
+							if iResearchRate * 100 / (researchCost - iCurr) >= 1:
+								self.researchBarDC.drawTickMarks(screen, iCurr, researchCost, iResearchRate)
 							screen.setBarPercentage("ResearchBar", InfoBarTypes.INFOBAR_RATE, iResearchRate * 1.0 / (researchCost - researchProgress - iOverflow))
 						else:
 							screen.setBarPercentage("ResearchBar", InfoBarTypes.INFOBAR_RATE, 0)
@@ -2540,7 +2550,7 @@ class CvMainInterface:
 			if CyCity.isOccupation():
 				szTxt += " " + self.iconOccupation + ":" + str(CyCity.getOccupationTimer())
 
-			screen.setText("CityNameText", "", szTxt, 1<<2, halfX, 32, 0, eFontGame, WidgetTypes.WIDGET_CITY_NAME, -1, -1)
+			screen.setText("CityNameText", "", szTxt, 1<<2, halfX, 32, 0, eFontGame, WidgetTypes.WIDGET_CITY_NAME, 0, 1)
 
 			iHealthGood = CyCity.goodHealth()
 			iHealthBad = CyCity.badHealth(False)
@@ -3260,7 +3270,7 @@ class CvMainInterface:
 		TYPE = UnitGroupingTypes.UNIT_GROUPING_COMBAT
 		screen.addPullDownString(ID, TRNSLTR.getText("TXT_KEY_UNIT_GROUPING_COMBAT", ()), TYPE, TYPE, SELECTED == TYPE)
 		TYPE = UnitGroupingTypes.UNIT_GROUPING_DOMAIN
-		screen.addPullDownString(ID, TRNSLTR.getText("TXT_KEY_UNIT_GROUPING_DOMAIN", ()), TYPE, TYPE, SELECTED == TYPE)
+		screen.addPullDownString(ID, TRNSLTR.getText("TXT_KEY_DOMAIN", ()), TYPE, TYPE, SELECTED == TYPE)
 		TYPE = UnitGroupingTypes.UNIT_GROUPING_HERO
 		screen.addPullDownString(ID, TRNSLTR.getText("TXT_KEY_UNIT_GROUPING_HERO", ()), TYPE, TYPE, SELECTED == TYPE)
 
@@ -3934,15 +3944,9 @@ class CvMainInterface:
 						if CyUnit.isHurt():
 							fPercentHP = float(CyUnit.currHitPoints()) / CyUnit.maxHitPoints()
 							fStrength = strengthBase * fPercentHP
-							szTxt2 += "%.1f" % fStrength
-							if szTxt2[-1] == "0":
-								szTxt2 = szTxt2[:-2]
-							szTxt2 += "/"
+							szTxt2 += self.floatToString(fStrength) + "/"
 
-						szTxt2 += "%.1f" % strengthBase
-						if szTxt2[-1] == "0":
-							szTxt2 = szTxt2[:-2]
-						szTxt2 += self.iconStrength
+						szTxt2 += self.floatToString(strengthBase) + self.iconStrength
 
 						screen.appendTableRow(unitTable)
 						screen.setTableText(unitTable, 0, iRow, "<font=1>" + szTxt1, "", eWidGen, 0, 0, 1<<0)
@@ -5042,17 +5046,16 @@ class CvMainInterface:
 		# Maintenance
 		iMaintenance = CyPlayer.getTotalMaintenance()
 		if iMaintenance:
-			szTxt += "\n" + TRNSLTR.getText("TXT_INTERFACE_TREASURYHELP_CIVIC_UPKEEP", ()) + " " + str(iMaintenance) + iconCommerceGold
+			szTxt += "\n" + TRNSLTR.getText("TXT_INTERFACE_TREASURYHELP_CITY_MAINTENANCE", ()) + " " + str(iMaintenance) + iconCommerceGold
 		# Unit upkeep
-		iUnitUpkeep = CyPlayer.calculateUnitCost()
+		iUnitUpkeep = CyPlayer.getFinalUnitUpkeep()
 		iUnitSupply = CyPlayer.calculateUnitSupply()
 		if iUnitUpkeep or iUnitSupply:
 			szTxt += "\n"
 			if iUnitUpkeep:
+				szTxt += TRNSLTR.getText("TXT_INTERFACE_TREASURYHELP_UNIT_UPKEEP", ()) + " " + str(iUnitUpkeep) + iconCommerceGold
 				if iUnitSupply:
-					szTxt += TRNSLTR.getText("TXT_INTERFACE_TREASURYHELP_UNIT_UPKEEP", ()) +" " + str(iUnitUpkeep) + iconCommerceGold + "\n	" + str(iUnitSupply) + iconCommerceGold + " " + TRNSLTR.getText("TXT_INTERFACE_TREASURYHELP_EXPEDITIONARY", ())
-				else:
-					szTxt += TRNSLTR.getText("TXT_INTERFACE_TREASURYHELP_UNIT_UPKEEP", ()) + " " + str(iUnitUpkeep) + iconCommerceGold
+					szTxt += "\n	" + str(iUnitSupply) + iconCommerceGold + " " + TRNSLTR.getText("TXT_INTERFACE_TREASURYHELP_EXPEDITIONARY", ())
 			elif iUnitSupply:
 				szTxt += TRNSLTR.getText("TXT_INTERFACE_TREASURYHELP_UNIT_SUPPLY", ()) + " " + str(iUnitSupply) + iconCommerceGold
 		# Trade
@@ -5422,10 +5425,17 @@ class CvMainInterface:
 						if not InCity: return
 						CyPlayer = InCity.CyPlayer
 						CyCity = InCity.CyCity
-						if CyCity.getProduction():
-							bCtrl = not bShift
-						elif TYPE == "UNIT" and CyCity.getProductionUnit() == iType:
-							bShift = not bCtrl
+
+						# Some modifier key logic
+						if bCtrl:
+							bShift = False
+						else:
+							if self.bInverseShiftQueue:
+								bShift = not bShift
+
+							if not bShift and CyCity.getProduction():
+								bCtrl = True
+
 						# Determine order type
 						iGaMsgType = GameMessageTypes.GAMEMESSAGE_PUSH_ORDER
 						szTxt = ""
@@ -5488,15 +5498,15 @@ class CvMainInterface:
 						self.InCity.QueueIndex += 1
 						szName = BASE + "|" + TYPE + "|"
 						ROW = "QueueRow"
-						if bShift:	# Last
-							iNode = CyIF.getNumOrdersQueued()
-							self.InCity.WorkQueue.append([szName, iType, szRow])
-						elif bCtrl: # First
+						if bCtrl: # First
 							y = dy
 							for i, entry in enumerate(InCity.WorkQueue):
 								screen.moveItem(ROW + entry[2], -2, y-2, 0)
 								y += dy
 							self.InCity.WorkQueue = [[szName, iType, szRow]] + InCity.WorkQueue
+						elif bShift: # Last
+							iNode = CyIF.getNumOrdersQueued()
+							self.InCity.WorkQueue.append([szName, iType, szRow])
 						else: # Replace current
 							if InCity.WorkQueue:
 								screen.show(InCity.WorkQueue[0][0] + "CityWork" + str(InCity.WorkQueue[0][1]))

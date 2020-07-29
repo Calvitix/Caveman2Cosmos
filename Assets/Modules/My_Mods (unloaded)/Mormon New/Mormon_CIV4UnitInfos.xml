@@ -21,6 +21,9 @@
 				<SubCombatType>UNITCOMBAT_HEALS_AS_PEOPLE</SubCombatType>
 			</SubCombatTypes>
 			<Domain>DOMAIN_LAND</Domain>
+			<MapCategoryTypes>
+				<MapCategoryType>MAPCATEGORY_EARTH</MapCategoryType>
+			</MapCategoryTypes>
 			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MORMON_MISSIONARY</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_RELIGION_PEDIA</Civilopedia>
@@ -38,6 +41,7 @@
 			</PrereqAndBuildings>
 			<iCost>110</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iBaseUpkeep>2</iBaseUpkeep>
 			<iMoves>2</iMoves>
 			<iBaseHurry>20</iBaseHurry>
 			<BonusProductionModifiers>
@@ -50,7 +54,6 @@
 					<iProductonModifier>10</iProductonModifier>
 				</BonusProductionModifier>
 			</BonusProductionModifiers>
-			<iExtraCost>1</iExtraCost>
 			<iAsset>1</iAsset>
 			<UnitMeshGroups>
 				<iGroupSize>2</iGroupSize>
@@ -89,6 +92,9 @@
 				<SubCombatType>UNITCOMBAT_SIZE_MEDIUM</SubCombatType>
 			</SubCombatTypes>
 			<Domain>DOMAIN_LAND</Domain>
+			<MapCategoryTypes>
+				<MapCategoryType>MAPCATEGORY_EARTH</MapCategoryType>
+			</MapCategoryTypes>
 			<DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_RETURNED_MISSIONARY</Description>
 			<Civilopedia>TXT_KEY_UNIT_RETURNED_MISSIONARY_PEDIA</Civilopedia>
@@ -129,6 +135,7 @@
 				</ReligionSpread>
 			</ReligionSpreads>
 			<iCost>-1</iCost>
+			<iBaseUpkeep>1</iBaseUpkeep>
 			<iMoves>1</iMoves>
 			<iCombat>4</iCombat>
 			<iXPValueDefense>3</iXPValueDefense>
